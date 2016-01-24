@@ -267,6 +267,9 @@ on property:init.svc.zygote=running
 on property:init.svc.zygote=restarting
     stop vendor.ppd
 
+on property:sys.boot_completed=1
+    setprop sys.io.scheduler "bfq"
+
 on charger
     start vendor.qcom-post-boot
     start vendor.hvdcp_opti
