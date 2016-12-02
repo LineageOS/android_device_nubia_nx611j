@@ -370,6 +370,10 @@ PRODUCT_PACKAGES += \
     libjson \
     libjson.vendor
 
+# Releasetools
+PRODUCT_PACKAGES += \
+    librecovery_updater_nubia
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
