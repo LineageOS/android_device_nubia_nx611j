@@ -213,4 +213,4 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # inherit from the proprietary version
--include vendor/nubia/nx611j/BoardConfigVendor.mk
+include vendor/nubia/nx611j/BoardConfigVendor.mk

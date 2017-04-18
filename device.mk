@@ -5,8 +5,6 @@
 
 #
 
-$(call inherit-product, vendor/nubia/nx611j/nx611j-vendor.mk)
-
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
@@ -440,3 +438,5 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 #PRODUCT_BOOT_JARS += \
 #    WfdCommon
+
+$(call inherit-product, vendor/nubia/nx611j/nx611j-vendor.mk)
