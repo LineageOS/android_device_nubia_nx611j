@@ -21,7 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.UserHandle;
-import androidx.preference.PreferenceManager;
+import android.support.v7.preference.PreferenceManager;
 import android.provider.Settings;
 import android.util.Log;
 
