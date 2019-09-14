@@ -58,4 +58,9 @@ setup_vendor "$DEVICE" "$VENDOR" "$MK_ROOT" false "$CLEAN_VENDOR"
 extract "$MY_DIR"/proprietary-files-qc-common.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/proprietary-files-nubia.txt "$SRC" "$SECTION"
 
+BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+patchelf --add-needed libprocessgroup.so "$BLOB_ROOT"/vendor/lib/hw/sound_trigger.primary.sdm660.so
+patchelf --add-needed libprocessgroup.so "$BLOB_ROOT"/vendor/lib64/hw/sound_trigger.primary.sdm660.so
+
 "$MY_DIR"/setup-makefiles.sh
