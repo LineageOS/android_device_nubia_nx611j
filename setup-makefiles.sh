@@ -18,8 +18,8 @@
 
 set -e
 
-DEVICE=clover
-VENDOR=xiaomi
+DEVICE=nx611j
+VENDOR=nubia
 
 INITIAL_COPYRIGHT_YEAR=2018
 

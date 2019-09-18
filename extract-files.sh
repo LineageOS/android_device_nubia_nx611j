@@ -18,8 +18,8 @@
 
 set -e
 
-DEVICE=clover
-VENDOR=xiaomi
+DEVICE=nx611j
+VENDOR=nubia
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

@@ -21,7 +21,7 @@
 # definition file).
 #
 
-$(call inherit-product, vendor/xiaomi/clover/clover-vendor.mk)
+$(call inherit-product, vendor/nubia/nx611j/nx611j-vendor.mk)
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -248,7 +248,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_clover
+    android.hardware.light@2.0-service.nubia_nx611j
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \

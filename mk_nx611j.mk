@@ -19,26 +19,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit from clover device
-$(call inherit-product, device/xiaomi/clover/device.mk)
+# Inherit from nx611j device
+$(call inherit-product, device/nubia/nx611j/device.mk)
 
 # Inherit some common Mokee stuff.
-$(call inherit-product, vendor/mk/config/common_full_tablet_wifionly.mk)
-$(call inherit-product, vendor/mk/config/telephony.mk)
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
-PRODUCT_NAME := mk_clover
-PRODUCT_BRAND := Xiaomi
-PRODUCT_CHARACTERISTICS := tablet
-PRODUCT_DEVICE := clover
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := MI PAD 4
+PRODUCT_NAME := mk_nx611j
+PRODUCT_BRAND := nubia
+PRODUCT_DEVICE := nx611j
+PRODUCT_MANUFACTURER := nubia
+PRODUCT_MODEL := Nubia Z18 Mini
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-nubia
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="clover" \
-    PRODUCT_NAME="clover" \
-    BUILD_FINGERPRINT="Xiaomi/clover/clover:8.1.0/OPM1.171019.019/V10.2.1.0.ODJCNXM:user/release-keys" \
-    PRIVATE_BUILD_DESC="clover-user 8.1.0 OPM1.171019.019 V10.2.1.0.ODJCNXM release-keys"
+    TARGET_DEVICE="nx611j" \
+    PRODUCT_NAME="nx611j" \
+    BUILD_FINGERPRINT="nubia/nx611j/nx611j:8.1.0/OPM1.171019.019/V10.1.1.0.ODJCNFI:user/release-keys" \
+    PRIVATE_BUILD_DESC="nx611j-user 8.1.0 OPM1.171019.019 V10.1.1.0.ODJCNFI release-keys"
 
-TARGET_VENDOR := Xiaomi
+TARGET_VENDOR := nubia
