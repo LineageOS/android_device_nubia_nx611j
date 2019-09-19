@@ -389,6 +389,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.usb@1.0-service
 
+# Verity
+$(call inherit-product, build/target/product/verity.mk)
+
 # VNDK
 PRODUCT_PACKAGES += vndk-sp
 
