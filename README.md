@@ -1,25 +1,29 @@
-Copyright 2018 - The Mokee Project
+Copyright 2019 - The MoKee Project
 
-The MI PAD 4 (codenamed _"clover"_) are high-end mid-range tablet from Xiaomi.
+Device configuration for Nubia Z18 Mini
+==============
 
-Xiaomi MI PAD 4 was announced and released in June 2018.
+The Nubia Z18 Mini (codenamed "nx611j / NX611J") are high-end smartphones from Nubia.
 
 ## Device specifications
 
-| Device       | Xiaomi MI PAD 4                         |
-| -----------: | :---------------------------------------------- |
-| SoC          | Qualcomm SDM660 Snapdragon 660                  |
-| CPU          | 8x Qualcomm® Kryo™ 260 up to 2.2GHz             |
-| GPU          | Adreno 512                                      |
-| Memory       | 3GB / 4GM RAM (LPDDR4X)                         |
-| Shipped Android version | 8.1.0                              |
-| Storage      | 64GB eMMC 5.1 flash storage                     |
-| Battery      | Non-removable Li-Po 6000 mAh                    |
-| Dimensions   | 200.2 x 120.3 x 7.9 mm                          |
-| Display      | 1920 x 1200 (16:10), 8.0 inch                   |
-| Rear camera | 13MP, f/2.0 1080p 30 fps video|
-| Front camera | 5MP, f/2.0|
+Basic   | Spec Sheet
+-------:|:-------------------------------------------------------------------------
+CPU     | Octa-core (4x2.2 GHz Kryo 260 & 4x1.8 GHz Kryo 260)
+CHIPSET | Qualcomm SDM660 Snapdragon 660(14nm)
+GPU     | Adreno 512
+Memory  | 6GB
+Storage | 64GB / 128GB
+Battery | 3450 mAh
+Shipped Android Version | 8.1.0
+Weigth | 153 g
+Dimensions | 148.0 x 70.6 x 7.6 mm
+Display | 5.7 inches, LCD, 1080 x 2160 pixels, 18:9, (~424 ppi pixel density)
+Rear Camera  | 24MP, f/2.2 & 5MP, depth sensor
+Front Camera | 8 MP, f/2.0
+USB          | Type-C & OTG support
+Release Date | April 2018
 
 ## Device picture
 
-![Xiaomi MI PAD 4](http://i8.mifile.cn/a1/pms_1529843020.73617168!560x560.jpg)
+![Nubia Z18 Mini](https://cdn2.gsmarena.com/vv/pics/zte/zte-nubia-z11-mini-r1.jpg "Nubia Z18 Mini")
