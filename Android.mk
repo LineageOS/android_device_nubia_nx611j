@@ -114,4 +114,13 @@ $(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK)
 
+SW_FP_IMAGES := \
+    sw_fp.b00 sw_fp.b01 sw_fp.b02 sw_fp.b03 sw_fp.b04 sw_fp.b05 sw_fp.b06 sw_fp.mdt
+SW_FP_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(SW_FP_IMAGES)))
+$(SW_FP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "SW_FP firmware link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /firmware/image/$(notdir $@) $@
+ALL_DEFAULT_INSTALLED_MODULES += $(SW_FP_SYMLINKS)
 endif
