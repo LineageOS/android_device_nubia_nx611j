@@ -26,4 +26,4 @@ Release Date | April 2018
 
 ## Device picture
 
-![Nubia Z18 Mini](https://fdn2.gsmarena.com/vv/bigpic/zte-nubia-z18-mini.jpg "Nubia Z18 Mini")
+![Nubia Z18 Mini](https://fdn2.gsmarena.com/vv/pics/zte/zte-nubia-z18-mini-1.jpg "Nubia Z18 Mini")
