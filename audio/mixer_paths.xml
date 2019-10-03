@@ -1814,6 +1814,10 @@
         <ctl name="HPHR" value="Switch" />
     </path>
 
+    <path name="headphones-hifi-filter">
+        <path name="headphones" />
+    </path>
+
     <path name="headphones-test">
 	<path name="headphones" />
 	<ctl name="RX1 Digital Volume" value="95" />
@@ -1900,6 +1904,11 @@
     <path name="speaker-and-headphones">
         <path name="headphones" />
         <ctl name="Ext Spk Switch" value="On" />
+    <path name="speaker-and-headphones-hifi-filter">
+        <path name="headphones" />
+        <path name="speaker" />
+    </path>
+    
     </path>
 
     <path name="speaker-and-line">
