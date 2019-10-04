@@ -126,9 +126,6 @@ $(SW_FP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(SW_FP_SYMLINKS)
 
-SW_FP_IMAGES := \
-    sw_fp.b00 sw_fp.b01 sw_fp.b02 sw_fp.b03 sw_fp.b04 sw_fp.b05 sw_fp.b06 sw_fp.mdt
-
 GOODIXFP_IMAGES := \
     goodixfp.b00 goodixfp.b01 goodixfp.b02 goodixfp.b03 goodixfp.b04 goodixfp.b05 \
     goodixfp.b06 goodixfp.mdt
