@@ -21,7 +21,7 @@ set -e
 DEVICE=nx611j
 VENDOR=nubia
 
-INITIAL_COPYRIGHT_YEAR=2018
+INITIAL_COPYRIGHT_YEAR=2019
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -42,7 +42,8 @@ setup_vendor "$DEVICE" "$VENDOR" "$MK_ROOT"
 # Copyright headers and guards
 write_headers
 
-write_makefiles "$MY_DIR"/proprietary-files.txt true
+write_makefiles "$MY_DIR"/proprietary-files-qc-common.txt true
+write_makefiles "$MY_DIR"/proprietary-files-nubia.txt true
 
 cat << EOF >> "$ANDROIDMK"
 
