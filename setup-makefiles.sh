@@ -17,7 +17,7 @@
 #
 
 set -e
-
+SRC=~/
 DEVICE=nx611j
 VENDOR=nubia
 
