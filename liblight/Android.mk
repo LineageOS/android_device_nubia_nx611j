@@ -29,4 +29,5 @@ LOCAL_CFLAGS := $(common_flags) \
 LOCAL_CLANG  := true
 LOCAL_MODULE := lights.sdm660
 LOCAL_MODULE_TAGS := optional
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
