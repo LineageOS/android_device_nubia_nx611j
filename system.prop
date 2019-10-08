@@ -55,9 +55,6 @@ vendor.vidc.dec.enable.downscalar=1
 # enable PQ feature by default
 vendor.vidc.enc.disable.pq=false
 
-# Additional buffers shared between Camera and Video
-vidc.enc.dcvs.extra-buff-count=2
-
 #Netflix custom property
 ro.netflix.bsp_rev=Q660-13149-1
 
@@ -118,9 +115,6 @@ persist.data.df.dev_name=rmnet_usb0
 # 2 or anything else is camera2
 persist.radio.VT_CAM_INTERFACE=1
 
-#add by Sven to close camera hal3
-persist.vendor.qti.telephony.vt_cam_interface=1
-
 #property to enable user to access Google WFD settings
 persist.debug.wfd.enable=1
 #Enable stm-events
@@ -157,12 +151,6 @@ ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
 #Motion Detector
 ro.vendor.sensors.mot_detect=true
-
-#Expose aux camera for below packages
-camera.aux.packagelist=org.codeaurora.snapcam
-
-#disable UBWC for camera
-persist.camera.preview.ubwc=0
 
 # Create zram disk
 ro.vendor.qti.config.zram=true
@@ -225,3 +213,11 @@ sys.autobrightness_optimize=true
 #add by shixiaoyou, 2018/04/02, set single SIM
 #Set the SIM model for DSDS. ssss - Single model, dsds - Dual model.
 persist.radio.multisim.config=dsds
+
+# Nubia Camera
+vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam,org.mokee.snap
+persist.camera.preview.ubwc=0
+ro.total.camera.number=3
+persist.camera.depth.focus.cb=0
+ro.config.devicename=nubia
+persist.sys.exif.model=nubia Z18mini
