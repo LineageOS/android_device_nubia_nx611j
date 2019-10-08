@@ -330,6 +330,10 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     fstab.qcom
 
+# Ramdisk nubia customization
+PRODUCT_PACKAGES += \
+    init.nb.sensor.rc \
+
 # RCS
 PRODUCT_PACKAGES += \
     rcs_service_aidl \
