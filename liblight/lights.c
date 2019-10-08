@@ -52,7 +52,7 @@ static struct light_state_t g_battery;
 #define RED_START_IDX_FILE "/sys/class/leds/nubia_led/start_idx"
 #define RED_PAUSE_LO_FILE "/sys/class/leds/nubia_led/pause_lo"
 #define RED_PAUSE_HI_FILE "/sys/class/leds/nubia_led/pause_hi"
-#define RED_BLINK_FILE "/sys/class/leds/nubia_led/blink"
+#define RED_BLINK_FILE "/sys/class/leds/nubia_led/blink_mode"
 #define DEFAULT_LED_BRIGHTNESS 255
 
 #define RAMP_STEP_DURATION 100
