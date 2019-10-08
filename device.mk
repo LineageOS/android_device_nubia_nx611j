@@ -262,6 +262,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
 # Lights
+PRODUCT_PACKAGES += \
+    lights.sdm660
+
+PRODUCT_PACKAGES += \
+    android.hardware.light-V2.0-java
+
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
