@@ -164,6 +164,9 @@ persist.chg.max_volt_mv=9000
 #Property to enable display default color mode
 vendor.display.enable_default_color_mode=0
 
+#system prop for Bluetooth SOC type
+vendor.bluetooth.soc=cherokee
+
 # Property for backup NTP Server
 persist.backup.ntpServer="0.pool.ntp.org"
 # enable IZat OptInApp overlay
