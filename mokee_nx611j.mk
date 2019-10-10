@@ -23,9 +23,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, device/nubia/nx611j/device.mk)
 
 # Inherit some common Mokee stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+$(call inherit-product, vendor/mokee/config/common_full_phone.mk)
 
-PRODUCT_NAME := mk_nx611j
+PRODUCT_NAME := mokee_nx611j
 PRODUCT_BRAND := nubia
 PRODUCT_DEVICE := nx611j
 PRODUCT_MANUFACTURER := nubia
