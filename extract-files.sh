@@ -27,7 +27,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 MK_ROOT="$MY_DIR"/../../..
 
-HELPER="$MK_ROOT"/vendor/mk/build/tools/extract_utils.sh
+HELPER="$MK_ROOT"/vendor/mokee/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -58,7 +58,7 @@ setup_vendor "$DEVICE" "$VENDOR" "$MK_ROOT" false "$CLEAN_VENDOR"
 extract "$MY_DIR"/proprietary-files-qc-common.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/proprietary-files-nubia.txt "$SRC" "$SECTION"
 
-BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+BLOB_ROOT="$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 patchelf --add-needed libprocessgroup.so "$BLOB_ROOT"/vendor/lib/hw/sound_trigger.primary.sdm660.so
 patchelf --add-needed libprocessgroup.so "$BLOB_ROOT"/vendor/lib64/hw/sound_trigger.primary.sdm660.so
