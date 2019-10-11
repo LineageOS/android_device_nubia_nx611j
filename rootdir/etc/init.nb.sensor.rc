@@ -95,22 +95,22 @@ on boot
 	chown system system /sys/class/light/light/dump_tp_parameter
 	chown system system /sys/class/light/light/dev_init
 
-	chmod 0644 system system /sys/class/light/light/enable
-	chmod 0644 system system /sys/class/light/light/delay
-	chmod 0644 system system /sys/class/light/light/red_data
-	chmod 0644 system system /sys/class/light/light/tp_cfg
-	chmod 0644 system system /sys/class/light/light/fac_calibrate
-	chmod 0644 system system /sys/class/light/light/calibrate
-	chmod 0644 system system /sys/class/light/light/light_value
-	chmod 0644 system system /sys/class/light/light/flush
-	chmod 0644 system system /sys/class/light/light/chip_name
-	chmod 0644 system system /sys/class/light/light/blue_data
-	chmod 0644 system system /sys/class/light/light/green_data
-	chmod 0644 system system /sys/class/light/light/clear_data
-	chmod 0644 system system /sys/class/light/light/dump_reg
-	chmod 0644 system system /sys/class/light/light/module_tpcolor
-	chmod 0644 system system /sys/class/light/light/dump_tp_parameter
-	chmod 0644 system system /sys/class/light/light/dev_init
+	chmod 0644 /sys/class/light/light/enable
+	chmod 0644 /sys/class/light/light/delay
+	chmod 0644 /sys/class/light/light/red_data
+	chmod 0644 /sys/class/light/light/tp_cfg
+	chmod 0644 /sys/class/light/light/fac_calibrate
+	chmod 0644 /sys/class/light/light/calibrate
+	chmod 0644 /sys/class/light/light/light_value
+	chmod 0644 /sys/class/light/light/flush
+	chmod 0644 /sys/class/light/light/chip_name
+	chmod 0644 /sys/class/light/light/blue_data
+	chmod 0644 /sys/class/light/light/green_data
+	chmod 0644 /sys/class/light/light/clear_data
+	chmod 0644 /sys/class/light/light/dump_reg
+	chmod 0644 /sys/class/light/light/module_tpcolor
+	chmod 0644 /sys/class/light/light/dump_tp_parameter
+	chmod 0644 /sys/class/light/light/dev_init
 
 	chown system system /persist/sensors/rgb_color_cfg
 	chown system system /persist/sensors/rgbc_cfg
