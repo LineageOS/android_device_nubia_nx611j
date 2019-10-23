@@ -15,26 +15,12 @@
  * limitations under the License.
  */
 
-#include <string>
+#include <stdint.h>
 
-// GraphicBuffer(uint32_t inWidth, uint32_t inHeight, PixelFormat inFormat,
-//               uint32_t inUsage, std::string requestorName = "<Unknown>");
-extern "C" void _ZN7android13GraphicBufferC1EjjijNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE(
-    uint32_t inWidth, uint32_t inHeight, int inFormat, uint32_t inUsage,
-    std::string requestorName);
+ namespace android {
+    extern "C" void _ZN7android13GraphicBuffer4lockEjPPvPiS3_(uint32_t inUsage, void** vaddr, int32_t* outBytesPerPixel, int32_t* outBytesPerStride);
 
-extern "C" void _ZN7android13GraphicBufferC1Ejjij(
-    uint32_t inWidth, uint32_t inHeight, int inFormat, uint32_t inUsage) {
-  std::string requestorName = "<Unknown>";
-  _ZN7android13GraphicBufferC1EjjijNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE(
-      inWidth, inHeight, inFormat, inUsage, requestorName);
-}
-
-// GraphicBuffer::lock(uint32_t inUsage, void** vaddr, int32_t* outBytesPerPixel = nullptr,
-//                     int32_t* outBytesPerStride = nullptr);
-extern "C" void _ZN7android13GraphicBuffer4lockEjPPvPiS3_(uint32_t inUsage, void** vaddr,
-    int32_t* outBytesPerPixel, int32_t* outBytesPerStride);
-
-extern "C" void _ZN7android13GraphicBuffer4lockEjPPv(uint32_t inUsage, void** vaddr) {
-    _ZN7android13GraphicBuffer4lockEjPPvPiS3_(inUsage, vaddr, nullptr, nullptr);
+     extern "C" void _ZN7android13GraphicBuffer4lockEjPPv(uint32_t inUsage, void** vaddr) {
+        _ZN7android13GraphicBuffer4lockEjPPvPiS3_(inUsage, vaddr, nullptr, nullptr);
+    }
 }
