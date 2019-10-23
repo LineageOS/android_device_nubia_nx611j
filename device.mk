@@ -194,6 +194,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint feature
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
+    fingerprint.sdm660 \
     fingerprintd
 
 PRODUCT_COPY_FILES += \
