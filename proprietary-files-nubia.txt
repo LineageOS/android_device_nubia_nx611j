@@ -672,6 +672,16 @@ vendor/lib64/libsensor1.so|44e7a290b808225e5e3d78f3672c7cdd27e6fa9e
 vendor/lib64/sensors.native.so|e6f84a8909d2e6a812f07c9853c4b7282eec80aa
 vendor/lib64/sensors.ssc.so|af8cb9aa8235a1ef8d34954d1d3e43b7d5d3cf57
 
+# Sensors calibration
+framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|4b187952761a10c8f023da18c2b808036ccfc11a
+vendor/etc/calmodule.cfg|35ca480b8b6d088dad04f424ac59e8b14b55c814
+vendor/lib/libcalmodule_common.so|d3c4503ce8c77373e30874ceb95f525da13c126f
+vendor/lib/sensor_calibrate.so|0c2d2b019f0e08685ad77a16b5391259bf128a05
+vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|af3ae6fc597e5fa123c3a2b839e7fa85c3a636be
+vendor/lib64/libcalmodule_common.so|cec7d07c15a095d7aa11f2c66065cfb683555926
+vendor/lib64/sensor_calibrate.so|0b419f7b24c2d6bc8ed6ff66fb6374ba838971d5
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|cee30a3b09c02587b55ffe6c04e96aabfe9f918e
+
 # Signed graphics firmware
 vendor/firmware/a508_zap.b00
 vendor/firmware/a508_zap.b01
