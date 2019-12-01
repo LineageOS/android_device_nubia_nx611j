@@ -405,9 +405,22 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl:64 \
     android.hardware.vibrator@1.0-service
 
+
 # VNDK
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    android.hardware.power-V2-cpp.vendor \
+    android.frameworks.bufferhub@1.0.vendor_32 \
+    audioclient-types-aidl-cpp.vendor \
+    audioflinger-aidl-cpp.vendor \
+    audiopolicy-aidl-cpp.vendor \
+    av-types-aidl-cpp.vendor \
+    libandroid_runtime_lazy.vendor \
+    libaudioclient_aidl_conversion.vendor \
+    libaudiofoundation.vendor \
+    libdng_sdk.vendor_32 \
+    libstdc++.vendor \
+    mediametricsservice-aidl-cpp.vendor \
+    vndk-ext
 
 # Wifi
 PRODUCT_PACKAGES += \
