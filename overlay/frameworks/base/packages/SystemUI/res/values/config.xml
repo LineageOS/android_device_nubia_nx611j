@@ -30,6 +30,12 @@
 
 -->
 <resources>
+    <!-- Doze: does this device support STATE_DOZE  -->
+    <bool name="doze_display_state_supported">true</bool>
+
+    <!-- Doze: does this device support STATE_DOZE_SUSPEND?  -->
+    <bool name="doze_suspend_display_state_supported">true</bool>
+
     <!-- Override value to use for proximity sensor.  -->
     <string name="proximity_sensor_type" translatable="false">android.sensor.proximity</string>
 
