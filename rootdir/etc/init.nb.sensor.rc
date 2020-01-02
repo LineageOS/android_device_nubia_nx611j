@@ -1,164 +1,284 @@
-# ADDED BY ZTEMT
-# add the sensor sysfs permission
+# Copyright (c) 2016, nubia. All rights reserved.
+#
+# init.nb.rc
+# For all nubia projects defined in device/zte
+
 on boot
-        #proximity
-	chmod 0777 /persist/sensors
-	chown system system /sys/class/proximity/proximity/enable
+    chmod 0666 /mnt/vendor/persist/bluetooth/.bt_nv.bin
+    chmod 0666 /mnt/vendor/persist/wlan_mac.bin
+    chown wifi wifi /mnt/vendor/persist/wlan_mac.bin
+#add device for IRControl
+	chown system system /sys/class/ir_remote/ir_remote/enable
+	chmod 0644 /sys/class/ir_remote/ir_remote/enable
 
-	#txc-pa224
-	chown system system /sys/class/proximity/proximity/delay
-	chown system system /sys/class/proximity/proximity/chip_name
-	chown system system /sys/class/proximity/proximity/prox_uncover_max
-	chown system system /sys/class/proximity/proximity/prox_uncover_min
-	chown system system /sys/class/proximity/proximity/prox_debug
-	chown system system /sys/class/proximity/proximity/prox_init
-	chown system system /sys/class/proximity/proximity/prox_value
-	chown system system /sys/class/proximity/proximity/prox_data_max
-	chown system system /sys/class/proximity/proximity/prox_offset_cal
+	chown system system /dev/ttyMSM1
+	chmod 0664 /dev/ttyMSM1
 
-	#ams-tmd2775
-	mkdir /persist/proxdata 0775 system system
-	chown system system /persist/proxdata
-	chmod 0775 /persist/proxdata
-	chown system system /sys/class/proximity/proximity/prox_manual_calibrate_threshold
-	chown system system /sys/class/proximity/proximity/prox_init
-	chown system system /sys/class/proximity/proximity/prox_threshold_init
-	chown system system /sys/class/proximity/proximity/prox_offset_init
-	chown system system /sys/class/proximity/proximity/prox_thres
-	chown system system /sys/class/proximity/proximity/chip_name
-	chown system system /sys/class/proximity/proximity/prox_threshold_cal_start
-	chown system system /sys/class/proximity/proximity/prox_offset_cal_start
-	chown system system /sys/class/proximity/proximity/prox_offset_cal
-	chown system system /sys/class/proximity/proximity/prox_data_safe_range_max
-	chown system system /sys/class/proximity/proximity/prox_data_safe_range_min
-	chown system system /sys/class/proximity/proximity/prox_calibrate
-	chown system system /sys/class/proximity/proximity/prox_calibrate_start
-	chown system system /sys/class/proximity/proximity/prox_calibrate_result
-	chown system system /sys/class/proximity/proximity/prox_data_max
-	chown system system /sys/class/proximity/proximity/prox_debug
-	chown system system /sys/class/proximity/proximity/prox_thres_max
-	chown system system /sys/class/proximity/proximity/prox_thres_min
-	chown system system /sys/class/proximity/proximity/prox_threshold_high
-	chown system system /sys/class/proximity/proximity/prox_threshold_low
-	chown system system /sys/class/proximity/proximity/prox_thres_param_high
-	chown system system /sys/class/proximity/proximity/prox_thres_param_low
-	chown system system /sys/class/proximity/proximity/prox_pluse_length
-	chown system system /sys/class/proximity/proximity/prox_thres_pulse_count
-	chown system system /sys/class/proximity/proximity/prox_wakelock
-	chown system system /sys/class/proximity/proximity/prox_phone_is_sleep
-	chown system system /sys/class/proximity/proximity/prox_irq
-	chown system system /sys/class/proximity/proximity/prox_offset_cal_verify
-	chown system system /sys/class/proximity/proximity/prox_calibrate_verify
-	chown system system /sys/class/proximity/proximity/prox_first_event
-	chown system system /sys/class/proximity/proximity/prox_thres_near
+        mkdir /data/vendor/nubiaeffect 0777 camera camera
 
-	chmod 0644 /sys/class/proximity/proximity/prox_data_max
-	chmod 0644 /sys/class/proximity/proximity/prox_uncover_max
-	chmod 0644 /sys/class/proximity/proximity/prox_uncover_min
-	chmod 0644 /sys/class/proximity/proximity/prox_value
-	chmod 0644 /sys/class/proximity/proximity/prox_offset_cal
-	chmod 0644 /sys/class/proximity/proximity/dev_init
-	chmod 0644 /sys/class/proximity/proximity/prox_manual_calibrate_threshold
-	chmod 0644 /sys/class/proximity/proximity/chip_name
-	chmod 0644 /sys/class/proximity/proximity/prox_threshold_cal_start
-	chmod 0644 /sys/class/proximity/proximity/prox_offset_cal_start
-	chmod 0644 /sys/class/proximity/proximity/prox_data_safe_range_max
-	chmod 0644 /sys/class/proximity/proximity/prox_data_safe_range_min
-	chmod 0644 /sys/class/proximity/proximity/prox_calibrate_start
-	chmod 0644 /sys/class/proximity/proximity/prox_calibrate_result
-	chmod 0644 /sys/class/proximity/proximity/prox_debug
-	chmod 0644 /sys/class/proximity/proximity/prox_thres_max
-	chmod 0644 /sys/class/proximity/proximity/prox_thres_min
-	chmod 0644 /sys/class/proximity/proximity/prox_threshold_high
-	chmod 0644 /sys/class/proximity/proximity/prox_threshold_low
-	chmod 0644 /sys/class/proximity/proximity/prox_pluse_length
-	chmod 0644 /sys/class/proximity/proximity/prox_thres_pulse_count
-	chmod 0644 /sys/class/proximity/proximity/prox_irq
-	chmod 0644 /sys/class/proximity/proximity/prox_offset_cal_verify
-	chmod 0644 /sys/class/proximity/proximity/prox_calibrate_verify
+	#for fpc
+	mkdir /dev/fpcSocket 0770 system system
+	chmod -R 0777 /dev/fpcSocket
+	chown system system /sys/bus/platform/devices/1.fpc1020/irq
+	chmod 0660 /sys/bus/platform/devices/1.fpc1020/irq
+	chown system system /sys/bus/platform/devices/1.fpc1020/wakeup_enable
+	chmod 0660 /sys/bus/platform/devices/1.fpc1020/wakeup_enable
 
-	#light
-	chown system system /sys/class/light/light/enable
-	chown system system /sys/class/light/light/tp_cfg
-	chown system system /sys/class/light/light/fac_calibrate
-	chown system system /sys/class/light/light/calibrate
-	chown system system /sys/class/light/light/light_value
-	chown system system /sys/class/light/light/flush
-	chown system system /sys/class/light/light/chip_name
-	chown system system /sys/class/light/light/delay
-	chown system system /sys/class/light/light/red_data
-	chown system system /sys/class/light/light/green_data
-	chown system system /sys/class/light/light/blue_data
-	chown system system /sys/class/light/light/clear_data
-	chown system system /sys/class/light/light/dump_reg
-	chown system system /sys/class/light/light/module_tpcolor
-	chown system system /sys/class/light/light/dump_tp_parameter
-	chown system system /sys/class/light/light/dev_init
+    chown system system /sys/class/leds/nubia_led/brightness
+    chown system system /sys/class/leds/nubia_led/fade_parameter
+    chown system system /sys/class/leds/nubia_led/grade_parameter
+    chown system system /sys/class/leds/nubia_led/outn
+    chown system system /sys/class/leds/nubia_led/blink_mode
+    chown system system /sys/class/leds/nubia_led/debug
 
-	chmod 0644 /sys/class/light/light/enable
-	chmod 0644 /sys/class/light/light/delay
-	chmod 0644 /sys/class/light/light/red_data
-	chmod 0644 /sys/class/light/light/tp_cfg
-	chmod 0644 /sys/class/light/light/fac_calibrate
-	chmod 0644 /sys/class/light/light/calibrate
-	chmod 0644 /sys/class/light/light/light_value
-	chmod 0644 /sys/class/light/light/flush
-	chmod 0644 /sys/class/light/light/chip_name
-	chmod 0644 /sys/class/light/light/blue_data
-	chmod 0644 /sys/class/light/light/green_data
-	chmod 0644 /sys/class/light/light/clear_data
-	chmod 0644 /sys/class/light/light/dump_reg
-	chmod 0644 /sys/class/light/light/module_tpcolor
-	chmod 0644 /sys/class/light/light/dump_tp_parameter
-	chmod 0644 /sys/class/light/light/dev_init
+    chown system system /sys/class/leds/vibrator/debug
+    chown system system /sys/class/timed_output/vibrator_drv2605/enable
+    chmod 664  /sys/class/timed_output/vibrator_drv2605/enable
 
-	chown system system /persist/sensors/rgb_color_cfg
-	chown system system /persist/sensors/rgbc_cfg
-	chown system system /persist/sensors/als_cal_data
-	chown system system /persist/sensors/xtalk_cal
-	chmod 0644 /persist/sensors/rgb_color_cfg
-	chmod 0644 /prtsist/sensors/rgbc_cfg
-	chmod 0644 /prtsist/sensors/als_cal_data
-	chmod 0644 /prtsist/sensors/xtalk_cal
+    # NFC
+    chmod 777 /dev/bcm2079x
+    chown nfc nfc /dev/bcm2079x
 
-        #ADD BY NUBIA FOR BREATHLED
-        chown system system /sys/class/leds/nubia_led/brightness
-        chown system system /sys/class/leds/nubia_led/outn
-        chown system system /sys/class/leds/nubia_led/grade_parameter
-        chown system system /sys/class/leds/nubia_led/fade_parameter
-        chown system system /sys/class/leds/nubia_led/blink_mode
-        chmod 0644 /sys/class/leds/nubia_led/brightness
-        chmod 0644 /sys/class/leds/nubia_led/outn
-        chmod 0644 /sys/class/leds/nubia_led/grade_parameter
-        chmod 0644 /sys/class/leds/nubia_led/fade_parameter
-        chmod 0644 /sys/class/leds/nubia_led/blink_mode
-	#ADD END BY NUBIA FOR BREATHLED
+    # NFC: create data/nfc for nv storage
+    mkdir /data/nfc 770 nfc nfc
+    mkdir /data/vendor/nfc 770 nfc nfc
 
-        # nubia multicolor led start
-	chown system system /sys/class/leds/aw9106_led0/set_time	
-	chown system system /sys/class/leds/aw9106_led0/set_mode	
-	chown system system /sys/class/leds/aw9106_led0/led_run	
-	chown system system /sys/class/leds/aw9106_led0/hwen	
-	chown system system /sys/class/leds/aw9106_led0/swen	
-	chown system system /sys/class/leds/aw9106_led0/reg	
-	chown system system /sys/class/leds/aw9106_led0/brightness	
-	chown system system /sys/class/leds/aw9106_led1/set_time	
-	chown system system /sys/class/leds/aw9106_led1/set_mode	
-	chown system system /sys/class/leds/aw9106_led1/led_run	
-	chown system system /sys/class/leds/aw9106_led1/hwen	
-	chown system system /sys/class/leds/aw9106_led1/swen	
-	chown system system /sys/class/leds/aw9106_led1/reg	
-	chown system system /sys/class/leds/aw9106_led1/brightness	
-	chown system system /sys/class/leds/aw22xxx_led/reg	
-	chown system system /sys/class/leds/aw22xxx_led/hwen	
-	chown system system /sys/class/leds/aw22xxx_led/fw	
-	chown system system /sys/class/leds/aw22xxx_led/cfg	
-	chown system system /sys/class/leds/aw22xxx_led/effect	
-	chown system system /sys/class/leds/aw22xxx_led/imax	
-	chown system system /sys/class/leds/aw22xxx_led/rgb	
-	chown system system /sys/class/leds/aw22xxx_led/task0	
-	chown system system /sys/class/leds/aw22xxx_led/task1	
-	chown system system /sys/class/leds/aw22xxx_led/brightness	
-	chown system system /sys/class/leds/aw22xxx_led/max_brightness
-        # nubia multicolor led end
-# ADDED BY ZTEMT anbangjun END
+    # NFC HAL suffix
+    setprop ro.hardware.nfc_nci bcm2079x.default
+
+    # Nubia begin feature add sensors node
+    chmod 0777 /persist/sensors
+
+    # hall_device
+    chown system system /sys/class/hall_device/hall_device/enable
+    chmod 0644 /sys/class/hall_device/hall_device/enable
+
+    #ir remote
+    chown system system /sys/class/ir_remote/ir_remote/enable
+    chmod 0644 /sys/class/ir_remote/ir_remote/enable
+
+    #chown system system /sys/class/leds/vibrator/debug
+    chown system system /sys/class/timed_output/vibrator_drv2605/enable
+    chmod 664  /sys/class/timed_output/vibrator_drv2605/enable
+    chmod 664 /dev/drv2605
+    chown system system /dev/drv2605
+
+    # proximity
+    chown system system /sys/class/proximity/proximity/enable
+    chown system system /sys/class/proximity/proximity/prox_uncover_max
+    chown system system /sys/class/proximity/proximity/reg
+    chown system system /sys/class/proximity/proximity/prox_value
+    chown system system /sys/class/proximity/proximity/dev_init
+    chown system system /sys/class/proximity/proximity/delay
+    chown system system /sys/class/proximity/proximity/prox_manual_calibrate_threshold
+    chown system system /sys/class/proximity/proximity/prox_init
+    chown system system /sys/class/proximity/proximity/prox_threshold_init
+    chown system system /sys/class/proximity/proximity/prox_offset_init
+    chown system system /sys/class/proximity/proximity/prox_thres
+    chown system system /sys/class/proximity/proximity/chip_name
+    chown system system /sys/class/proximity/proximity/prox_threshold_cal_start
+    chown system system /sys/class/proximity/proximity/prox_offset_cal_start
+    chown system system /sys/class/proximity/proximity/prox_offset_cal
+    chown system system /sys/class/proximity/proximity/prox_data_safe_range_max
+    chown system system /sys/class/proximity/proximity/prox_data_safe_range_min
+    chown system system /sys/class/proximity/proximity/prox_calibrate
+    chown system system /sys/class/proximity/proximity/prox_calibrate_start
+    chown system system /sys/class/proximity/proximity/prox_calibrate_result
+    chown system system /sys/class/proximity/proximity/prox_data_max
+    chown system system /sys/class/proximity/proximity/prox_debug
+    chown system system /sys/class/proximity/proximity/prox_thres_max
+    chown system system /sys/class/proximity/proximity/prox_thres_min
+    chown system system /sys/class/proximity/proximity/prox_threshold_high
+    chown system system /sys/class/proximity/proximity/prox_threshold_low
+    chown system system /sys/class/proximity/proximity/prox_thres_param_high
+    chown system system /sys/class/proximity/proximity/prox_thres_param_low
+    chown system system /sys/class/proximity/proximity/prox_pluse_length
+    chown system system /sys/class/proximity/proximity/prox_thres_pulse_count
+    chown system system /sys/class/proximity/proximity/prox_wakelock
+    chown system system /sys/class/proximity/proximity/prox_phone_is_sleep
+    chown system system /sys/class/proximity/proximity/prox_irq
+    chown system system /sys/class/proximity/proximity/prox_offset_cal_verify
+    chown system system /sys/class/proximity/proximity/prox_calibrate_verify
+
+    chmod 0644 /sys/class/proximity/proximity/reg
+    chmod 0644 /sys/class/proximity/proximity/prox_value
+    chmod 0644 /sys/class/proximity/proximity/prox_offset_cal
+    chmod 0644 /sys/class/proximity/proximity/dev_init
+    chmod 0644 /sys/class/proximity/proximity/prox_manual_calibrate_threshold
+    chmod 0644 /sys/class/proximity/proximity/chip_name
+    chmod 0644 /sys/class/proximity/proximity/prox_threshold_cal_start
+    chmod 0644 /sys/class/proximity/proximity/prox_offset_cal_start
+    chmod 0644 /sys/class/proximity/proximity/prox_data_safe_range_max
+    chmod 0644 /sys/class/proximity/proximity/prox_data_safe_range_min
+    chmod 0644 /sys/class/proximity/proximity/prox_calibrate_start
+    chmod 0644 /sys/class/proximity/proximity/prox_calibrate_result
+    chmod 0644 /sys/class/proximity/proximity/prox_debug
+    chmod 0644 /sys/class/proximity/proximity/prox_thres_max
+    chmod 0644 /sys/class/proximity/proximity/prox_thres_min
+    chmod 0644 /sys/class/proximity/proximity/prox_threshold_high
+    chmod 0644 /sys/class/proximity/proximity/prox_threshold_low
+    chmod 0644 /sys/class/proximity/proximity/prox_pluse_length
+    chmod 0644 /sys/class/proximity/proximity/prox_thres_pulse_count
+    chmod 0644 /sys/class/proximity/proximity/prox_irq
+    chmod 0644 /sys/class/proximity/proximity/prox_offset_cal_verify
+    chmod 0644 /sys/class/proximity/proximity/prox_calibrate_verify
+    chown system system /persist/sensors/xtalk_cal
+    chmod 0664 /persist/sensors/xtalk_cal
+
+    # sensors key  event
+    chmod 0664 /dev/input/event0
+    chmod 0664 /dev/input/event1
+    chmod 0664 /dev/input/event2
+    chmod 0664 /dev/input/event3
+    chmod 0664 /dev/input/event4
+    chmod 0664 /dev/input/event5
+    chmod 0664 /dev/input/event6
+    chmod 0664 /dev/input/event7
+    chmod 0664 /dev/input/event8
+
+    # light
+    chown system system /sys/class/light/light/enable
+    chown system system /sys/class/light/light/tp_cfg
+    chown system system /sys/class/light/light/fac_calibrate
+    chown system system /sys/class/light/light/calibrate
+    chown system system /sys/class/light/light/chip_name
+    chown system system /sys/class/light/light/light_value
+    chown system system /sys/class/light/light/delay
+    chown system system /sys/class/light/light/red_data
+    chown system system /sys/class/light/light/green_data
+    chown system system /sys/class/light/light/blue_data
+    chown system system /sys/class/light/light/clear_data
+    chown system system /sys/class/light/light/dump_reg
+    chown system system /sys/class/light/light/module_tpcolor
+    chown system system /sys/class/light/light/dump_tp_parameter
+    chown system system /sys/class/light/light/dev_init
+    chown system system /persist/sensors/rgb_color_cfg
+    chown system system /persist/sensors/rgbc_cfg
+    chown system system /persist/sensors/als_cal_data
+
+    chmod 0644   /sys/class/light/light/enable
+    chmod 0644   /sys/class/light/light/tp_cfg
+    chmod 0644   /sys/class/light/light/fac_calibrate
+    chmod 0644   /sys/class/light/light/calibrate
+    chmod 0644   /sys/class/light/light/chip_name
+    chmod 0644   /sys/class/light/light/light_value
+    chmod 0644   /sys/class/light/light/delay
+    chmod 0644   /sys/class/light/light/red_data
+    chmod 0644   /sys/class/light/light/blue_data
+    chmod 0644   /sys/class/light/light/green_data
+    chmod 0644   /sys/class/light/light/clear_data
+    chmod 0644   /sys/class/light/light/dump_reg
+    chmod 0644   /sys/class/light/light/module_tpcolor
+    chmod 0644   /sys/class/light/light/dump_tp_parameter
+    chmod 0644   /sys/class/light/light/dev_init
+    chmod 0664   /persist/sensors/rgb_color_cfg
+    chmod 0664   /persist/sensors/rgbc_cfg
+    chmod 0664   /persist/sensors/als_cal_data
+
+    # Breath light
+    chown system system /sys/class/leds/nubia_led/brightness
+    chown system system /sys/class/leds/nubia_led/fade_parameter
+    chown system system /sys/class/leds/nubia_led/grade_parameter
+    chown system system /sys/class/leds/nubia_led/outn
+    chown system system /sys/class/leds/nubia_led/blink_mode
+
+#nubia, tp&lcd node start
+on post-fs-data
+    mkdir /data/vendor/tp 0775 system system
+    rm /data/vendor/tp/ic_ver
+    rm /data/vendor/tp/reset
+    rm /data/vendor/tp/ic_detect
+    rm /data/vendor/tp/start_update
+    rm /data/vendor/tp/easy_wakeup_gesture
+    rm /data/vendor/tp/easy_sleep_palm
+    rm /data/vendor/tp/read_rt2
+    rm /data/vendor/tp/read_rt3
+    rm /data/vendor/tp/start_user_update
+
+    chown system system /sys/class/touch/tpnode/synaptics/0dbutton
+    chown system system /sys/class/touch/tpnode/synaptics/ic_ver
+    symlink /sys/class/touch/tpnode/synaptics/ic_ver /data/vendor/tp/ic_ver
+    chown system system /sys/class/touch/tpnode/synaptics/reset
+    symlink /sys/class/touch/tpnode/synaptics/reset /data/vendor/tp/reset
+    chown system system /sys/class/touch/tpnode/synaptics/device/ic_detect
+    symlink /sys/class/touch/tpnode/synaptics/device/ic_detect /data/vendor/tp/ic_detect
+	
+    symlink /sys/class/touch/tpnode/synaptics/device/start_update /data/vendor/tp/start_update
+    chown system system /sys/class/touch/tpnode/synaptics/wake_gesture
+    symlink /sys/class/touch/tpnode/synaptics/wake_gesture /data/vendor/tp/easy_wakeup_gesture
+    chown system system /sys/class/touch/tpnode/synaptics/palm_sleep
+    symlink /sys/class/touch/tpnode/synaptics/palm_sleep /data/vendor/tp/easy_sleep_palm
+    write /sys/class/touch/tpnode/synaptics/start_update 1
+    chown system system /sys/kernel/lcd_enhance/colortmp
+    chown system system /sys/kernel/lcd_enhance/saturation
+    chown system system /sys/kernel/lcd_enhance/cabc
+    chown system system /sys/kernel/lcd_enhance/lcd_power_on
+    chown system system /sys/kernel/lcd_enhance/lcd_power_off
+    chown system system /sys/class/touch/tpnode/synaptics/f54/read_rt2
+    chown system system /sys/class/touch/tpnode/synaptics/f54/read_rt3
+    chown system system /sys/class/touch/tpnode/synaptics/remap
+    symlink /sys/class/touch/tpnode/synaptics/f54/read_rt2 /data/vendor/tp/read_rt2
+    symlink /sys/class/touch/tpnode/synaptics/f54/read_rt3 /data/vendor/tp/read_rt3
+    chown system system /sys/class/touch/tpnode/synaptics/device/start_user_update
+    symlink /sys/class/touch/tpnode/synaptics/device/start_user_update /data/vendor/tp/start_user_update
+    write /sys/class/touch/tpnode/synaptics/remap 18
+
+#nubia, tp&lcd node end
+
+on property:gsm.call.other_to_gsm=1
+    write /sys/class/touch/tpnode/synaptics/home 194
+    write /sys/class/touch/tpnode/synaptics/menu 194
+    write /sys/class/touch/tpnode/synaptics/back 194
+
+on property:gsm.call.other_to_gsm=2
+    write /sys/class/touch/tpnode/synaptics/home 147
+    write /sys/class/touch/tpnode/synaptics/menu 147
+    write /sys/class/touch/tpnode/synaptics/back 166
+
+on property:sys.tp.wakeup=*
+    write /sys/class/touch/tpnode/synaptics/wake_gesture ${sys.tp.wakeup}
+
+on property:sys.tp.palmsleep=*
+    write /sys/class/touch/tpnode/synaptics/palm_sleep ${sys.tp.palmsleep}
+#nubia end
+
+on property:persist.gesture.swapbuttons=*
+    write /sys/class/touch/tpnode/synaptics/swap_buttons ${persist.gesture.swapbuttons}
+
+on property:persist.gesture.palmsleep=*
+    write /sys/class/touch/tpnode/synaptics/palm_sleep ${persist.gesture.palmsleep}
+
+on property:persist.gesture.edgeslop=*
+    write /sys/class/touch/tpnode/synaptics/remap ${persist.gesture.edgeslop}
+
+# nubia Disable SSR to SoC restart
+on property:persist.vendor.ssr.restart_level=1
+    write /sys/bus/msm_subsys/devices/subsys0/restart_level system
+    write /sys/bus/msm_subsys/devices/subsys1/restart_level system
+    write /sys/bus/msm_subsys/devices/subsys2/restart_level system
+    write /sys/bus/msm_subsys/devices/subsys3/restart_level system
+    write /sys/bus/msm_subsys/devices/subsys4/restart_level system
+    write /sys/bus/msm_subsys/devices/subsys5/restart_level system
+    write /sys/bus/msm_subsys/devices/subsys6/restart_level system
+
+# Enable SSR
+on property:persist.vendor.ssr.restart_level=3
+    write /sys/bus/msm_subsys/devices/subsys0/restart_level related
+    write /sys/bus/msm_subsys/devices/subsys1/restart_level related
+    write /sys/bus/msm_subsys/devices/subsys2/restart_level related
+    write /sys/bus/msm_subsys/devices/subsys3/restart_level related
+    write /sys/bus/msm_subsys/devices/subsys4/restart_level related
+    write /sys/bus/msm_subsys/devices/subsys5/restart_level related
+    write /sys/bus/msm_subsys/devices/subsys6/restart_level related
+
+on property:persist.vendor.ap.restart_level=0
+    write /sys/module/msm_poweroff/parameters/download_mode 0
+
+on property:persist.vendor.ap.restart_level=1
+    write /sys/module/msm_poweroff/parameters/download_mode 1
+
+on property:sys.tp.wakeup=*
+    write /sys/class/touch/tpnode/synaptics/wake_gesture ${sys.tp.wakeup}
+
+on property:sys.tp.palmsleep=*
+    write /sys/class/touch/tpnode/synaptics/palm_sleep ${sys.tp.palmsleep}
