@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="eas_preformance_entries">
+        <item>均衡 (默认)</item>
+        <item>性能</item>
+        <item>省电</item>
+        <item>游戏</item>
+    </string-array>
+
+</resources>

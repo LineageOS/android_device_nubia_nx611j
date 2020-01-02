@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/perf_about"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_help_outline"
+        android:title="@string/perf_about" />
+</menu>

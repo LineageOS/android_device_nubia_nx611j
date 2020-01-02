@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne
+    
+# ConfigPanel
+PRODUCT_PACKAGES += \
+    ConfigPanel
 
 # Display
 PRODUCT_PACKAGES += \

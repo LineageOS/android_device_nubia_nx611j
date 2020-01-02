@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="36dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpufreq_tip"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cpufreq_min"/>
+
+        <Spinner
+            android:id="@+id/freq_spinner_min"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:dropDownWidth="150dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cpufreq_max"/>
+
+        <Spinner
+            android:id="@+id/freq_spinner_max"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:dropDownWidth="150dp" />
+
+    </LinearLayout>
+</LinearLayout>
