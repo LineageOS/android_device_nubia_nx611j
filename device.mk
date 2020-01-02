@@ -165,8 +165,8 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne
     
 # ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
+#PRODUCT_PACKAGES += \
+#    ConfigPanel
 
 # Display
 PRODUCT_PACKAGES += \
@@ -190,8 +190,8 @@ PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
     
 # Doze
-PRODUCT_PACKAGES += \
-    NubiaDoze
+#PRODUCT_PACKAGES += \
+#    NubiaDoze
 
 # DRM
 PRODUCT_PACKAGES += \
