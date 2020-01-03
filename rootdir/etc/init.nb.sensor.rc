@@ -18,7 +18,7 @@ on boot
 
 	#for fpc
 	mkdir /dev/fpcSocket 0770 system system
-	chmod -R 0777 /dev/fpcSocket
+	chmod 0777 /dev/fpcSocket
 	chown system system /sys/bus/platform/devices/1.fpc1020/irq
 	chmod 0660 /sys/bus/platform/devices/1.fpc1020/irq
 	chown system system /sys/bus/platform/devices/1.fpc1020/wakeup_enable
