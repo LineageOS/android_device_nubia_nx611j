@@ -20,6 +20,7 @@ package org.mokee.settings.device;
 import android.app.ActionBar;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Build;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
@@ -41,6 +42,9 @@ public class ButtonSettingsFragment extends PreferenceFragment
         addPreferencesFromResource(R.xml.button_panel);
         final ActionBar actionBar = getActivity().getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        if (Build.MODEL.equals("NX595J")) {
+            getPreferenceScreen().removePreference(findPreference("button_swap"));
+        }
     }
 
     @Override

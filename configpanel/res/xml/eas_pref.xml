@@ -17,31 +17,9 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ListPreference
+    <SwitchPreference
         android:key="eas_preformance"
-        android:title="@string/boost_title"
-        android:entries="@array/eas_preformance_entries"
-        android:entryValues="@array/eas_preformance_values"
-	    android:defaultValue="0"/>
-
-    <SwitchPreference
-        android:key="cpufreq_adj"
-        android:title="@string/cpufreq_adj_title"
-        android:summary="@string/cpufreq_adj_summary" />
-
-    <Preference 
-        android:key="cpufreq_little"
-        android:title="@string/cpufreq_little_title"
-        android:dependency="cpufreq_adj" />
-
-    <Preference 
-        android:key="cpufreq_big"
-        android:title="@string/cpufreq_big_title"
-        android:dependency="cpufreq_adj" />
-
-    <SwitchPreference
-        android:key="freq_boot_apply"
-        android:title="@string/boot_apply_title"
-        android:summary="@string/boot_apply_summary" />
+        android:title="@string/preformance_title"
+        android:summary="@string/preformance_summary" />
 
 </PreferenceScreen>

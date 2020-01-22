@@ -54,6 +54,22 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".EASPrefActivity"
+            android:label="@string/eas_preformance_title">
+            <intent-filter>
+              <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_additional_buttons" />
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.homepage" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/eas_preformance_title" />
+        </activity>
+
         <receiver android:name=".Startup" >
             <intent-filter>
                 <action android:name="mokee.intent.action.INITIALIZE_MK_HARDWARE" />

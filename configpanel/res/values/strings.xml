@@ -21,26 +21,10 @@
 
     <string name="eas_preformance_title">Preformance</string>
 
-    <string name="boost_title">Boost Strategy</string>
-
     <string name="custom_config_title">Custom Performance Configuration</string>
     <string name="custom_config_summary">Import from storage</string>
 
-    <string name="cpufreq_adj_title">Allow adjustment of CPU MAX/MIN frequency</string>
-    <string name="cpufreq_adj_summary">这将会屏蔽系统自身的CPU\"锁频\"策略, 详细说明请点击右上按钮</string>
-
-    <string name="perf_about">允许设置CPU最高/最低频率: \n如果自定义的CPU设置不当可能会导致卡顿(设置过低)/耗电(设置过高)。\n\"锁频\"的说明: Power驱动会在部分情况下设置CPU的最低频率和最高频率(不仅CPU的频率,还有更多的参数,这里就忽略它们)来提供更好的性能。\n  例如：打开一个新应用时,拍照按下快门的时候会将CPU的最高和最低频率设置成极限频率来保证流畅性/播放音乐的时候会将大核的最低频率限制到一定频率等等。\n开启这个选项的时候将会屏蔽这些功能\n</string>
-
-    <string name="cpufreq_little_title">Little Core Freq</string>
-    <string name="cpufreq_big_title">Big Core Freq</string>
-
-    <string name="cpufreq_max">Max:</string>
-    <string name="cpufreq_min">Min:</string>
-
-    <string name="boot_apply_title">Boot Apply</string>
-    <string name="boot_apply_summary">cpufreq</string>
-
-    <string name="cpufreq_tip">Due to "Stune boost", the lowest frequency may be incorrect, ignore it and set your frequency</string>
-
+  <string name="preformance_title">Enable CPU Overfreq</string>
+  <string name="preformance_summary">BigCore 2.3Ghz/LittleCore 1.7Ghz. May cause your device to be unstable!</string>
 
 </resources>

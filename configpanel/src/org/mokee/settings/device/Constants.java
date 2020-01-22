@@ -28,8 +28,6 @@ public class Constants {
     public static final String BUTTON_SWAP_KEY = "button_swap";
     public static final String PALM_SLEEP_KEY = "palm_sleep";
 
-    public static final String FREQ_BOOT_APPLY = "freq_boot_apply";
-
     // Nodes
     public static final String BUTTON_SWAP_PROP = "persist.gesture.swapbuttons";
     public static final String PALM_SLEEP_PROP = "persist.gesture.palmsleep";

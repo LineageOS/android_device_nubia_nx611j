@@ -46,7 +46,6 @@ public class Startup extends BroadcastReceiver {
                 Boolean value = preferences.getBoolean(key, backend.getDefaultValue());
 
                 backend.setValue(value);
-
             }
         }
     }

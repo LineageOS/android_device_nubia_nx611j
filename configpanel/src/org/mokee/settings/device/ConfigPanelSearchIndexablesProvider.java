@@ -41,6 +41,9 @@ public class ConfigPanelSearchIndexablesProvider extends SearchIndexablesProvide
     private static SearchIndexableResource[] INDEXABLE_RES = new SearchIndexableResource[]{
             new SearchIndexableResource(1, R.xml.button_panel,
                     ButtonSettingsActivity.class.getName(),
+                    R.drawable.ic_settings_additional_buttons),
+            new SearchIndexableResource(1, R.xml.eas_pref,
+                    EASPrefActivity.class.getName(),
                     R.drawable.ic_settings_additional_buttons)
     };
 
@@ -53,6 +56,7 @@ public class ConfigPanelSearchIndexablesProvider extends SearchIndexablesProvide
     public Cursor queryXmlResources(String[] projection) {
         MatrixCursor cursor = new MatrixCursor(INDEXABLES_XML_RES_COLUMNS);
         cursor.addRow(generateResourceRef(INDEXABLE_RES[SEARCH_IDX_BUTTON_PANEL]));
+        cursor.addRow(generateResourceRef(INDEXABLE_RES[1]));
         return cursor;
     }
 

@@ -20,11 +20,6 @@ package org.mokee.settings.device;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-import android.app.AlertDialog;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-
 public class EASPrefActivity extends PreferenceActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,28 +27,5 @@ public class EASPrefActivity extends PreferenceActivity {
 
         getFragmentManager().beginTransaction().replace(android.R.id.content,
                 new EASPrefFragment()).commit();
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        new MenuInflater(this).inflate(R.menu.menu_pref, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-	        case R.id.perf_about:
-	        	showAboutDialog();
-	            return true;
-	        default:
-	            return super.onOptionsItemSelected(item);
-        }
-    }
-
-    private void showAboutDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(R.string.perf_about);
-        builder.create().show();
     }
 }
