@@ -170,4 +170,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=Yang Cyborg
+    ro.mk.maintainer=Cyborg2017
