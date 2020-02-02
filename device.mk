@@ -246,6 +246,26 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0-java
+    
+# Init
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.msm.usb.configfs.rc \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    init.recovery.qcom.rc \
+    init.target.rc \
+    ueventd.qcom.rc \
+    fstab.qcom
+
+# Ramdisk nubia customization
+PRODUCT_PACKAGES += \
+    init.nb.sensor.rc
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -337,25 +357,6 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.class_main.sh \
-    init.macaddress_setup.sh \
-    init.msm.usb.configfs.rc \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.rc \
-    init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.target.rc \
-    ueventd.qcom.rc \
-    fstab.qcom
-
-# Ramdisk nubia customization
-PRODUCT_PACKAGES += \
-    init.nb.sensor.rc \
 
 # RCS
 PRODUCT_PACKAGES += \
