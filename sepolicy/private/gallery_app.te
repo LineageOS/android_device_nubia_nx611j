@@ -2,3 +2,5 @@ get_prop(gallery_app, exported_camera_prop)
 
 allow gallery_app exported_camera_prop:file { getattr open read };
 
+# Binder call with gpuservice
+binder_call(gallery_app, gpuservice)
