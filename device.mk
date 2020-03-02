@@ -146,10 +146,6 @@ PRODUCT_PACKAGES += \
     libshim_camera \
     Snap
 
-# CNE
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne
     
 # ConfigPanel
 PRODUCT_PACKAGES += \
