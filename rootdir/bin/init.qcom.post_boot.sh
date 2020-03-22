@@ -1539,7 +1539,6 @@ case "$target" in
 
         case "$soc_id" in
             "293" | "304" | "338" | "351")
-
                 #init task load, restrict wakeups to preferred cluster
                 echo 15 > /proc/sys/kernel/sched_init_task_load
 
@@ -1676,7 +1675,6 @@ case "$target" in
         esac
         case "$soc_id" in
             "349" | "350")
-
             for devfreq_gov in /sys/class/devfreq/qcom,mincpubw*/governor
             do
                 echo "cpufreq" > $devfreq_gov
@@ -1915,7 +1913,6 @@ case "$target" in
 
         case "$soc_id" in
              "294" | "295" | "313" )
-
                 # Apply Scheduler and Governor settings for 8937/8940
 
                 # HMP scheduler settings
@@ -2184,7 +2181,6 @@ case "$target" in
         #Apply settings for sdm630
         case "$soc_id" in
             "318" | "327" )
-
             # Setting b.L scheduler parameters
             echo 85 > /proc/sys/kernel/sched_upmigrate
             echo 85 > /proc/sys/kernel/sched_downmigrate
