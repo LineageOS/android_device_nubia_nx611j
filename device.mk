@@ -440,6 +440,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifi.supplicant@1.0_vendor \
     wificond \
     wifilogd \
+    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
