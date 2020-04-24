@@ -6,9 +6,6 @@
 
 DEVICE_PATH := device/nubia/nx611j
 
-# Use Snapdragon LLVM, if available
-TARGET_USE_SDCLANG := true
-
 # Build
 BUILD_BROKEN_DUP_RULES := true
 
