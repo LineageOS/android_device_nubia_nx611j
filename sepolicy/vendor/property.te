@@ -1,5 +1,5 @@
 # Fingerprint
-type hal_fingerprint_prop, property_type;
+vendor_public_prop(hal_fingerprint_prop)
 
 # Thermal
 type thermal_engine_prop, property_type;
