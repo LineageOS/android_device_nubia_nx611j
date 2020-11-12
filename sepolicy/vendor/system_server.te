@@ -2,6 +2,10 @@
 allow system_server sysfs_battery_supply:dir search;
 allow system_server sysfs_battery_supply:file { getattr open read };
 
+# Bootanim
+get_prop(system_server, userspace_reboot_config_prop)
+get_prop(system_server, userspace_reboot_exported_prop)
+
 # Light
 allow system_server sysfs_nubia_breathlight:file { open read write };
 
