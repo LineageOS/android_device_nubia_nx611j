@@ -15,7 +15,7 @@ vendor/lib/libmmlib2d_interface.so
 vendor/lib/libqomx_core.so
 
 # Camera (- nubia specific)
-lib/libNubiaImageAlgorithm.so:vendor/lib/libNubiaImageAlgorithm.so
+lib/libNubiaImageAlgorithm.so:vendor/lib/libNubiaImageAlgorithm.so|e1c6172cc9a5416b446b6711f84a93dfec3cefa3
 lib/libarcsoft_beautyshot.so:vendor/lib/libarcsoft_beautyshot.so
 lib/libarcsoft_beautyshot_image_algorithm.so:vendor/lib/libarcsoft_beautyshot_image_algorithm.so
 lib/libarcsoft_beautyshot_video_algorithm.so:vendor/lib/libarcsoft_beautyshot_video_algorithm.so

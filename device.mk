@@ -150,7 +150,8 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     vendor.qti.hardware.camera.device@1.0:64 \
     libcamera_sdm660_shim \
-    libNubiaImageAlgorithmShim
+    libNubiaImageAlgorithmShim \
+    libui_shim.vendor_32
 
 # Control groups and task profiles
 PRODUCT_COPY_FILES += \

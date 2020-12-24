@@ -76,6 +76,7 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "libNubiaImageAlgorithmShim.so" "${2}"
             "${PATCHELF}" --remove-needed "libjnigraphics.so" "${2}"
             "${PATCHELF}" --remove-needed "libnativehelper.so" "${2}"
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
         ;;
         vendor/lib/libmmcamera_ppeiscore.so|vendor/lib/libmmcamera_bokeh.so|vendor/lib/libnubia_effect.so|vendor/lib64/libnubia_effect.so|vendor/lib64/libnubia_media_player.so)
             "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
