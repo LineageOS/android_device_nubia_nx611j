@@ -70,7 +70,7 @@ function blob_fixup() {
             done
             ;;
         vendor/lib/hw/camera.sdm660.so)
-            "${PATCHELF}" --add-needed "libcamera_sdm660_shim.so" "${2}"
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
          ;;
         vendor/lib/libNubiaImageAlgorithm.so)
             "${PATCHELF}" --add-needed "libNubiaImageAlgorithmShim.so" "${2}"

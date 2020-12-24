@@ -149,7 +149,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5:64 \
     libdng_sdk.vendor \
     vendor.qti.hardware.camera.device@1.0:64 \
-    libcamera_sdm660_shim \
     libNubiaImageAlgorithmShim \
     libui_shim.vendor_32
 

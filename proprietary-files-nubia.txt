@@ -8,7 +8,7 @@ vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
 # Camera HAL(- can be replaced by oss)
-vendor/lib/hw/camera.sdm660.so
+vendor/lib/hw/camera.sdm660.so|aa4c670d190f3106bf66a918e52a4a382ad64c76
 vendor/lib/libmm-qcamera.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmlib2d_interface.so
