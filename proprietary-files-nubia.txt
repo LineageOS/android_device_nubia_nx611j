@@ -22,7 +22,7 @@ lib/libarcsoft_beautyshot_video_algorithm.so:vendor/lib/libarcsoft_beautyshot_vi
 lib/libarcsoft_dualcam_refocus.so:vendor/lib/libarcsoft_dualcam_refocus.so
 lib/libarcsoft_night_shot.so:vendor/lib/libarcsoft_night_shot.so
 lib/libmpbase.so:vendor/lib/libmpbase.so
-lib/libnubia_effect.so:vendor/lib/libnubia_effect.so
+lib/libnubia_effect.so:vendor/lib/libnubia_effect.so|45e24692fb8fa5d6a63123979ce9f9f6720e8a89
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
 lib64/libAlgorithm.so:vendor/lib64/libAlgorithm.so
 lib64/libAltek_Alignment.so:vendor/lib64/libAltek_Alignment.so
@@ -48,8 +48,8 @@ lib64/libmpbase.so:vendor/lib64/libmpbase.so
 lib64/libmulti_exposure.so:vendor/lib64/libmulti_exposure.so
 lib64/libnubia_clone.so:vendor/lib64/libnubia_clone.so
 lib64/libnubia_delay_recorder.so:vendor/lib64/libnubia_delay_recorder.so
-lib64/libnubia_effect.so:vendor/lib64/libnubia_effect.so
-lib64/libnubia_media_player.so:vendor/lib64/libnubia_media_player.so
+lib64/libnubia_effect.so:vendor/lib64/libnubia_effect.so|8b0b7e1413caa1d4f388c970339fbe6c400689c1
+lib64/libnubia_media_player.so:vendor/lib64/libnubia_media_player.so|74a549a3ba6679207ae0289ae98fcb90bca7fb15
 lib64/libnubia_trajectory.so:vendor/lib64/libnubia_trajectory.so
 lib64/libnubiajpeg.so:vendor/lib64/libnubiajpeg.so
 lib64/libpanoramahelper.so:vendor/lib64/libpanoramahelper.so
@@ -146,7 +146,7 @@ vendor/lib64/libvideoutils.so
 
 # Camera mmcamera
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
-vendor/lib/libmmcamera_bokeh.so
+vendor/lib/libmmcamera_bokeh.so|cde04f1bb1a2d49501334db7bb002d8868a2b1d2
 vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dbg.so
@@ -258,7 +258,7 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so
+vendor/lib/libmmcamera_ppeiscore.so|c12c6a9f3fa9d196925be07bbb1950b902b132ef
 vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so
 vendor/lib/libmmcamera_qtech_f5670bq_eeprom.so
 vendor/lib/libmmcamera_quadracfa.so
