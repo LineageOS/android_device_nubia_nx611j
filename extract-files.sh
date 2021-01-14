@@ -88,8 +88,8 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed "libgui.so" "${2}"
          ;;
         vendor/lib64/hw/fingerprint.sdm660.so)
-            "${PATCHELF}" --replace-needed "libunwind.so" "libunwind-vendor.so" "${2}"
-            "${PATCHELF}" --replace-needed "libbacktrace.so" "libbacktrace-vendor.so" "${2}"
+            "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
+            "${PATCHELF}" --remove-needed "libbacktrace.so" "${2}"
          ;;
     esac
 }
