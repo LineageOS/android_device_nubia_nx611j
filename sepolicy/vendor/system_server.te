@@ -8,6 +8,9 @@ allow system_server userspace_reboot_config_prop:file { getattr open read };
 get_prop(system_server, userspace_reboot_config_prop)
 get_prop(system_server, userspace_reboot_exported_prop)
 
+# Camera
+allow system_server exported_camera_prop:file { getattr open read };
+
 # Light
 allow system_server sysfs_nubia_breathlight:file { open read write };
 
