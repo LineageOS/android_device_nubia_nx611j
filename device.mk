@@ -5,9 +5,6 @@
 
 #
 
-# Vendor properties
--include $(LOCAL_PATH)/vendor_prop.mk
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -201,7 +198,6 @@ PRODUCT_COPY_FILES += \
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
     fs_config_files
-
 # GPS / Location
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0-impl-qti \
