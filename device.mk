@@ -1,8 +1,7 @@
-# 
-# Copyright (C) 2019 The Mokee Project
+#
+# Copyright (C) 2018 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
-
 #
 
 # Overlays
