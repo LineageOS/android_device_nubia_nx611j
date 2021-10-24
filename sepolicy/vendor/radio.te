@@ -5,3 +5,5 @@ allow radio hal_datafactory_hwservice:hwservice_manager find;
 allow radio hal_iwlan_hwservice:hwservice_manager find;
 
 get_prop(radio, vendor_qcom_ims_prop)
+
+dontaudit rild default_prop:file r_file_perms;
