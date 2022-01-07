@@ -653,11 +653,9 @@ vendor/lib64/hw/keystore.sdm660.so
 # Sensors -from asus x01BD
 vendor/bin/sensors.qti|f7bc782de932f6b53ac3a2f5023de56e202f19d7
 vendor/etc/sensors/sensor_def_qcomdev.conf|c673951d430942a2e27f880da5afe6c34bbcfb71
-vendor/lib/hw/activity_recognition.sdm660.so|5019f4c8113b366a99027fb6078802455d27db19
 vendor/lib/libsensor_reg.so|50f201af793aba58ce63f85c3a021bf57cf86b3c
 vendor/lib/libsensor1.so|844229f98527e40f7c4a739566c351dba878bffd
 vendor/lib/sensors.native.so|5a9848cd2eb4065275fd7fcf3fa08a0aa3247859
-vendor/lib64/hw/activity_recognition.sdm660.so|9a6e3a733ac5dc3cf57db04ed62d3116d732e4da
 vendor/lib64/libsensor_reg.so|01d08c542f7beaa253337ec22caddec928a5bf29
 vendor/lib64/libsensor1.so|44e7a290b808225e5e3d78f3672c7cdd27e6fa9e
 vendor/lib64/sensors.native.so|e6f84a8909d2e6a812f07c9853c4b7282eec80aa
