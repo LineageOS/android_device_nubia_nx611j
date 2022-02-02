@@ -64,8 +64,6 @@ TARGET_USES_GRALLOC1 := true
 TARGET_USES_ION := true
 TARGET_SCREEN_DENSITY := 420
 
-OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
-
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/tp/wake_gesture"
 
