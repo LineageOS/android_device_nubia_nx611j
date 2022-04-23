@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <!--
  Copyright (c) 2016, The Linux Foundation. All rights reserved.
@@ -31,6 +32,13 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
 <resources>
+    <!-- Override value to use for proximity sensor.  -->
+    <string name="proximity_sensor_type" translatable="false">android.sensor.proximity</string>
+
+    <!-- If using proximity_sensor_type, specifies a threshold value to distinguish near and
+         far break points. A sensor value less than this is considered "near". -->
+    <item name="proximity_sensor_threshold" translatable="false" format="float" type="dimen">5</item>
+
     <!-- List of Carrier one mcc mncs-->
     <string-array name="config_carrier_one_networks" translatable="false">
         <item>405840</item>
