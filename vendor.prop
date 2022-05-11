@@ -94,6 +94,9 @@ ro.total.camera.number=3
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM660
 
+# Dalvik
+dalvik.vm.systemuicompilerfilter=speed
+
 # Display
 debug.renderengine.backend=threaded
 debug.sf.early_app_phase_offset_ns=1500000
