@@ -66,9 +66,6 @@ TARGET_SCREEN_DENSITY := 420
 
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
-
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/tp/wake_gesture"
 
