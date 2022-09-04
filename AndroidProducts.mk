@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mokee_nx611j.mk
+    $(LOCAL_DIR)/lineage_nx611j.mk

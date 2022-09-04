@@ -227,7 +227,7 @@ sys.autobrightness_optimize=true
 persist.radio.multisim.config=dsds
 
 # Nubia Camera
-vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam,org.mokee.snap
+vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam,org.lineageos.snap
 persist.camera.preview.ubwc=0
 ro.total.camera.number=3
 persist.camera.depth.focus.cb=0

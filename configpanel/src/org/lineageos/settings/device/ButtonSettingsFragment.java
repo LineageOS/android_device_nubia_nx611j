@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.mokee.settings.device;
+package org.lineageos.settings.device;
 
 import android.app.ActionBar;
 import android.content.SharedPreferences;
@@ -31,8 +31,8 @@ import androidx.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
-import org.mokee.internal.util.FileUtils;
-import org.mokee.internal.util.PackageManagerUtils;
+import org.lineageos.internal.util.FileUtils;
+import org.lineageos.internal.util.PackageManagerUtils;
 
 public class ButtonSettingsFragment extends PreferenceFragment
         implements OnPreferenceChangeListener {

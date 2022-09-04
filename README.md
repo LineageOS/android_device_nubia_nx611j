@@ -1,4 +1,4 @@
-Copyright 2019 - The MoKee Project
+Copyright 2022 - The LineageOS Project
 
 Device configuration for Nubia Z18 Mini
 ==============

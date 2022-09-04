@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.mokee.settings.device;
+package org.lineageos.settings.device;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-public class EASPrefActivity extends PreferenceActivity {
+public class ButtonSettingsActivity extends PreferenceActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new EASPrefFragment()).commit();
+                new ButtonSettingsFragment()).commit();
     }
 }

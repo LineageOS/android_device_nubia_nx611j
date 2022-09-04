@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.mokee.settings.device;
+package org.lineageos.settings.device;
 
 public abstract class SwitchPreferenceBackend {
     protected Boolean mDefaultValue;
