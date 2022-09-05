@@ -31,7 +31,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/nubia/nx611j
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
 
 # Permissions
 PRODUCT_COPY_FILES += \
