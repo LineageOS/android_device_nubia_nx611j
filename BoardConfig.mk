@@ -6,15 +6,11 @@
 
 DEVICE_PATH := device/nubia/nx611j
 
-# Build
-BUILD_BROKEN_DUP_RULES := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
 
 # Platform
-BOARD_VENDOR := nubia
 TARGET_BOARD_PLATFORM := sdm660
 
 # Architecture
