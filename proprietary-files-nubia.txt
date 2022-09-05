@@ -91,48 +91,48 @@ vendor/lib/libmm-qcamera.so
 vendor/lib/libqomx_core.so
 
 # Camera (- nubia specific)
-lib/libNubiaImageAlgorithm.so
-lib/libarcsoft_beautyshot.so
-lib/libarcsoft_beautyshot_image_algorithm.so
-lib/libarcsoft_beautyshot_video_algorithm.so
-lib/libarcsoft_dualcam_refocus.so
-lib/libarcsoft_night_shot.so
-lib/libmpbase.so
-lib/libnubia_effect.so
-lib/libtrueportrait.so
-lib64/libNubiaImageAlgorithm.so
-lib64/libarcsoft_beautyshot.so
-lib64/libarcsoft_beautyshot_image_algorithm.so
-lib64/libarcsoft_beautyshot_video_algorithm.so
-lib64/libarcsoft_dualcam_refocus.so
-lib64/libarcsoft_night_shot.so
-lib64/libmpbase.so
-lib64/libnubia_effect.so
-lib64/libtrueportrait.so
-lib64/libAlgorithm.so
-lib64/libAltek_Alignment.so
-lib64/libavcodec.so
-lib64/libavformat.so
-lib64/libavfilter.so
-lib64/libavutil.so
-lib64/libBigAperture.so
-lib64/libBuffer.so
-lib64/libbuffer_manager.so
-lib64/libdngcreator.so
-lib64/libhistutil.so
-lib64/libIndependenceUtil.so
-lib64/libmorpho_panorama_gp.so
-lib64/libmulti_exposure.so
-lib64/libnubia_clone.so
-lib64/libnubia_delay_recorder.so
-lib64/libnubia_media_player.so
-lib64/libnubia_trajectory.so
-lib64/libnubiajpeg.so
-lib64/libpanoramahelper.so
-lib64/libPrettyWaterMark.so
-lib64/libproductinfo.so
-lib64/libswscale.so
-lib64/libswresample.so
+lib/libNubiaImageAlgorithm.so:vendor/lib/libNubiaImageAlgorithm.so
+lib/libarcsoft_beautyshot.so:vendor/lib/libarcsoft_beautyshot.so
+lib/libarcsoft_beautyshot_image_algorithm.so:vendor/lib/libarcsoft_beautyshot_image_algorithm.so
+lib/libarcsoft_beautyshot_video_algorithm.so:vendor/lib/libarcsoft_beautyshot_video_algorithm.so
+lib/libarcsoft_dualcam_refocus.so:vendor/lib/libarcsoft_dualcam_refocus.so
+lib/libarcsoft_night_shot.so:vendor/lib/libarcsoft_night_shot.so
+lib/libmpbase.so:vendor/lib/libmpbase.so
+lib/libnubia_effect.so:vendor/lib/libnubia_effect.so
+lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
+lib64/libNubiaImageAlgorithm.so:vendor/lib64/libNubiaImageAlgorithm.so
+lib64/libarcsoft_beautyshot.so:vendor/lib64/libarcsoft_beautyshot.so
+lib64/libarcsoft_beautyshot_image_algorithm.so:vendor/lib64/libarcsoft_beautyshot_image_algorithm.so
+lib64/libarcsoft_beautyshot_video_algorithm.so:vendor/lib64/libarcsoft_beautyshot_video_algorithm.so
+lib64/libarcsoft_dualcam_refocus.so:vendor/lib64/libarcsoft_dualcam_refocus.so
+lib64/libarcsoft_night_shot.so:vendor/lib64/libarcsoft_night_shot.so
+lib64/libmpbase.so:vendor/lib64/libmpbase.so
+lib64/libnubia_effect.so:vendor/lib64/libnubia_effect.so
+lib64/libtrueportrait.so:vendor/lib64/libtrueportrait.so
+lib64/libAlgorithm.so:vendor/lib64/libAlgorithm.so
+lib64/libAltek_Alignment.so:vendor/lib64/libAltek_Alignment.so
+lib64/libavcodec.so:vendor/lib64/libavcodec.so
+lib64/libavformat.so:vendor/lib64/libavformat.so
+lib64/libavfilter.so:vendor/lib64/libavfilter.so
+lib64/libavutil.so:vendor/lib64/libavutil.so
+lib64/libBigAperture.so:vendor/lib64/libBigAperture.so
+lib64/libBuffer.so:vendor/lib64/libBuffer.so
+lib64/libbuffer_manager.so:vendor/lib64/libbuffer_manager.so
+lib64/libdngcreator.so:vendor/lib64/libdngcreator.so
+lib64/libhistutil.so:vendor/lib64/libhistutil.so
+lib64/libIndependenceUtil.so:vendor/lib64/libIndependenceUtil.so
+lib64/libmorpho_panorama_gp.so:vendor/lib64/libmorpho_panorama_gp.so
+lib64/libmulti_exposure.so:vendor/lib64/libmulti_exposure.so
+lib64/libnubia_clone.so:vendor/lib64/libnubia_clone.so
+lib64/libnubia_delay_recorder.so:vendor/lib64/libnubia_delay_recorder.so
+lib64/libnubia_media_player.so:vendor/lib64/libnubia_media_player.so
+lib64/libnubia_trajectory.so:vendor/lib64/libnubia_trajectory.so
+lib64/libnubiajpeg.so:vendor/lib64/libnubiajpeg.so
+lib64/libpanoramahelper.so:vendor/lib64/libpanoramahelper.so
+lib64/libPrettyWaterMark.so:vendor/lib64/libPrettyWaterMark.so
+lib64/libproductinfo.so:vendor/lib64/libproductinfo.so
+lib64/libswscale.so:vendor/lib64/libswscale.so
+lib64/libswresample.so:vendor/lib64/libswresample.so
 
 vendor/lib/libarcsoft_dualcam_verification.so
 vendor/lib/libcalibverify.so
@@ -537,12 +537,12 @@ vendor/bin/hvdcp_opti
 vendor/etc/qdcm_calib_data_jdi_hx83112a_1080_2160_5p65_video_dsi_panel.xml
 
 # DRM
-lib/libGPTEE_system.so
-lib/libQTEEConnector_system.so
-lib/vendor.qti.hardware.qteeconnector@1.0.so
-lib64/libGPTEE_system.so
-lib64/libQTEEConnector_system.so
-lib64/vendor.qti.hardware.qteeconnector@1.0.so
+lib/libGPTEE_system.so:vendor/lib/libGPTEE_system.so
+lib/libQTEEConnector_system.so:vendor/lib/libQTEEConnector_system.so
+lib/vendor.qti.hardware.qteeconnector@1.0.so:vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
+lib64/libGPTEE_system.so:vendor/lib64/libGPTEE_system.so
+lib64/libQTEEConnector_system.so:vendor/lib64/libQTEEConnector_system.so
+lib64/vendor.qti.hardware.qteeconnector@1.0.so:vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/bin/qseecomd
@@ -598,7 +598,7 @@ vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so
 
 # Fingerprint
-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 vendor/bin/hw/vendor.sw.swfingerprint@1.0-service
 vendor/bin/qfp-daemon
 vendor/etc/init/vendor.sw.swfingerprint@1.0-service.rc
@@ -676,7 +676,7 @@ vendor/lib64/sensors.ssc.so|28b128c63d239d5e9be0ed4e853b9ad7ef204fbf
 vendor/lib64/sensors.oem.so|ccc498f4416f677bf58c41e0f99d8f7bc6f2ef53
 
 # Sensors calibration -from asus x01BD
-framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|4b187952761a10c8f023da18c2b808036ccfc11a
+framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar:vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|4b187952761a10c8f023da18c2b808036ccfc11a
 vendor/etc/calmodule.cfg|35ca480b8b6d088dad04f424ac59e8b14b55c814
 vendor/lib/libcalmodule_common.so|d3c4503ce8c77373e30874ceb95f525da13c126f
 vendor/lib/sensor_calibrate.so|0c2d2b019f0e08685ad77a16b5391259bf128a05
