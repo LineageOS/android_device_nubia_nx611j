@@ -105,13 +105,6 @@ vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|fbff6357ee46dd6d62f490a942ff567b6ce955d1
 vendor/lib64/libdpmqmihal.so|30a170684219dd589d05ce5b446e73b7501f13e3
 
-# DRM - Widevine - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine|9743c4ecd0fb8773795bcbfbb406f25616c04129
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|458dd241f5f8536eccb57f012b3eba0061736e8e
-vendor/lib/mediadrm/libwvdrmengine.so|254d325a07138ae94ab329a41b9ffab1b73eaab9
-vendor/lib64/libwvhidl.so|87e9e1537ec650899c5a50498474470ec87d5d62
-vendor/lib64/mediadrm/libwvdrmengine.so|3a3a4473881290ef24be489f47aedccabe033857
-
 # ESE-Powermanager - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|458fcf9b1c0c9dccdd08dce37a679d5d5b4ccd9f
 vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc|58a3866ad5a7613d9392c9adb671eaa7825578a2
@@ -491,6 +484,16 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|4cb6683a36ad11b18632fe99d7031e6a3c9
 -vendor/app/TimeService/TimeService.apk|78109530538aa8fb533ad288c9d356c57481a10e
 vendor/bin/time_daemon|9fd464e3f356fcd4f4db6a4c9a1383d8210cb67b
 vendor/lib64/libtime_genoff.so|8f4c1f9ace6af463b241b130d6872b5d39cc7b2a
+
+# TUI - from jasmine
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|a0d692fe10ef9dc4479497fa666640612f06fbb4
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e47baed52f1c0637de34fa55e45a86b4b412a672
+
+# Widevine - from jasmine
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|dee5b7838ac561a2292e89fc0c4ccd1932224215
+vendor/lib64/libwvhidl.so|0466cd3b2a7b93efd23945e2637430513472ad7c
 
 # Wifi - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
 vendor/bin/cnss-daemon|df219cb3134ba5b60ade06f0b3bd6cd5c13eb8e3
