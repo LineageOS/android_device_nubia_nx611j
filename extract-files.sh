@@ -72,6 +72,11 @@ function blob_fixup() {
         vendor/lib/hw/camera.sdm660.so)
               "${PATCHELF}" --add-needed "libcamera_sdm660_shim.so" "${2}"
          ;;
+        vendor/lib/libNubiaImageAlgorithm.so)
+              "${PATCHELF}" --add-needed "libNubiaImageAlgorithmShim.so" "${2}"
+              "${PATCHELF}" --remove-needed "libjnigraphics.so" "${2}"
+              "${PATCHELF}" --remove-needed "libnativehelper.so" "${2}"
+        ;;
     esac
 }
 

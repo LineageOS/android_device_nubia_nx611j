@@ -13,3 +13,13 @@ cc_library_shared {
     ],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libNubiaImageAlgorithmShim",
+    srcs: ["NubiaImageAlgorithm_shim.cpp"],
+    shared_libs: [
+        "libui",
+        "libutils",
+    ],
+    vendor: true,
+}
