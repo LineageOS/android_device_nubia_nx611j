@@ -77,6 +77,15 @@ function blob_fixup() {
               "${PATCHELF}" --remove-needed "libjnigraphics.so" "${2}"
               "${PATCHELF}" --remove-needed "libnativehelper.so" "${2}"
         ;;
+        vendor/lib/libmmcamera_ppeiscore.so|vendor/lib/libmmcamera_bokeh.so|vendor/lib/libnubia_effect.so|vendor/lib64/libnubia_effect.so|vendor/lib64/libnubia_media_player.so)
+              "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
+         ;;
+        vendor/lib64/libnubia_media_player.so)
+              "${PATCHELF}" --remove-needed "libandroid_runtime.so" "${2}"
+         ;;
+        vendor/lib/libmmcamera_ppeiscore.so|vendor/lib/libmmcamera_bokeh.so|vendor/lib/libnubia_effect.so|vendor/lib64/libnubia_effect.so|vendor/lib64/libnubia_media_player.so)
+              sed -i "s|libgui.so|libfui.so|g" "${2}"
+         ;;
     esac
 }
 

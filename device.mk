@@ -152,7 +152,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5:64 \
     vendor.qti.hardware.camera.device@1.0:64 \
     libcamera_sdm660_shim \
-    libNubiaImageAlgorithmShim
+    libNubiaImageAlgorithmShim \
+    libfui
     
 # ConfigPanel
 PRODUCT_PACKAGES += \
