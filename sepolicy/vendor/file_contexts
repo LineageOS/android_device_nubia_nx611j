@@ -24,5 +24,9 @@
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.nx611j                     u:object_r:hal_light_default_exec:s0
 
+
+# Root files
+/persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
+
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
