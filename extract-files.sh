@@ -69,6 +69,9 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libshim_dpmframework.so" "$LIBSHIM_DPMFRAMEWORK"
             done
             ;;
+        vendor/lib/hw/camera.sdm660.so)
+              "${PATCHELF}" --add-needed "libcamera_sdm660_shim.so" "${2}"
+         ;;
     esac
 }
 

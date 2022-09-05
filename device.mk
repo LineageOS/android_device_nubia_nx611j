@@ -151,7 +151,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5:64 \
     vendor.qti.hardware.camera.device@1.0:64 \
-    libshim_camera
+    libcamera_sdm660_shim
     
 # ConfigPanel
 PRODUCT_PACKAGES += \
