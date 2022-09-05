@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "NX611JWifiOverlay",
+    theme: "NX611JWifiOverlay",
+    sdk_version: "current",
+    product_specific: true
+}
