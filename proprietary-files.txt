@@ -1,10 +1,9 @@
-# Alarm - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
-framework/vendor.qti.hardware.alarm-V1.0-java.jar|e1bf3224a115fb258fce5a2b6538418b98c58d28
--vendor/app/PowerOffAlarm/PowerOffAlarm.apk|881e8db50782b0c72aa9ca51731f30156c097f78
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|b7f648c81773214202aaa3620863d048c90713c7
+# Alarm - from jasmine
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|faccc2a7d94d486c2f61a5fe85f5c4598b4147a7
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|df138b77fb116a1a786a70c9c76b69d61b5c04d2
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so|5761eae471e8dcd94ce139e831a1aa5b23f133c6
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|1e2631850cc97dfedbde50a9d0d55c8d14881b44
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|271f85f1c6dc0c65dc3aa9a8603f3910fa50e1ea
 
 # ANT+ (system) - from enchilada - PKQ1.180716.001
 lib/com.qualcomm.qti.ant@1.0.so|3376c771d0ecbe0caaf20bd0483f9d4754d178bf
