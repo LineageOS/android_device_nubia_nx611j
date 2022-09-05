@@ -12,9 +12,11 @@ product/lib64/com.qualcomm.qti.ant@1.0.so:system_ext/lib64/com.qualcomm.qti.ant@
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|181a8ab9b1d40705d3151821b53732c5566a2848
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|aa08f9ec51392ed841f60ad08b7f083312c8c5ee
 
-# AptX - from Nokia 7 Plus Onyx_00WW-user 9 PPR1.180610.011 00WW_3_22C release-keys
-vendor/lib64/libaptX_encoder.so|22f5749edb5099526788c22708099a7791dd837f
-vendor/lib64/libaptXHD_encoder.so|c4ad4d6d7615f7df3ea1a4be5c6dae8a8c8ee8b1
+# Audio (A2dp) - from jasmine
+vendor/lib/btaudio_offload_if.so|d9a9795e173dffd4b5ee000acac66c1ad6f1648c
+vendor/lib/hw/audio.bluetooth_qti.default.so|c64b101dd33042d2f702ab5059231ca9684fc1d0
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|947afef6bf7a05a9a2b45022edfed06bd7c00e64
+vendor/lib/libbluetooth_audio_session_qti.so|53fd0369c50fbaef12c22e25e3073a6fc9f05bb7
 
 # Bluetooth - from Mi A2 jasmine_sprout 9 PKQ1.180904.001 V10.0.1.0.PDIMIFJ release-keys
 vendor/bin/btnvtool|957c5c3b8379b02085ee04ba39e67536361e368d
