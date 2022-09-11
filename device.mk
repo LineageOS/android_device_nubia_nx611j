@@ -290,9 +290,9 @@ PRODUCT_PACKAGES += \
    android.hardware.light@2.0-service.nx611j
 
 # LiveDisplay native
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.livedisplay@2.0-service-sdm \
-#    vendor.lineage.livedisplay@2.0-service-sysfs
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm \
+    vendor.lineage.livedisplay@2.0-service-sysfs
 
 # Media
 PRODUCT_COPY_FILES += \
