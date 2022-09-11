@@ -33,12 +33,6 @@ vendor/lib/rfsa/adsp/libscveFaceLandmark_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
-# ANT+ (vendor)
-vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so
-vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
-vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
-
 # Audio
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbmapper.so
@@ -141,7 +135,6 @@ vendor/lib/libdepthmapwrapper.so
 vendor/lib/libdualcameraddm.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libhal_dbg.so
-vendor/lib/libhdr_tm.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
@@ -162,7 +155,6 @@ vendor/lib/libvideoutils.so
 vendor/lib/libarcsoft_high_dynamic_range.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/libdualcameraddm.so
-vendor/lib64/libhdr_tm.so
 vendor/lib64/liboptizoom.so
 vendor/lib64/libseemore.so
 vendor/lib64/libts_detected_face_hal.so
@@ -201,7 +193,6 @@ vendor/lib/libvideoutils.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/libdualcameraddm.so
-vendor/lib64/libhdr_tm.so
 vendor/lib64/liboptizoom.so
 vendor/lib64/libscveBlobDescriptor.so
 vendor/lib64/libscveBlobDescriptor_stub.so
@@ -649,14 +640,15 @@ vendor/lib/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterdeviceutils.so
-
-# Keystore
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-vendor/lib/hw/keystore.sdm660.so
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib64/hw/keystore.sdm660.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+
+# Keystore
+vendor/lib/hw/keystore.sdm660.so
+vendor/lib64/hw/keystore.sdm660.so
+
 
 # Sensors -from asus x01BD
 vendor/bin/sensors.qti|f7bc782de932f6b53ac3a2f5023de56e202f19d7
