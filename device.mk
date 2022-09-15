@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5:64 \
+    libdng_sdk.vendor \
     vendor.qti.hardware.camera.device@1.0:64 \
     libcamera_sdm660_shim \
     libNubiaImageAlgorithmShim \
@@ -173,11 +174,13 @@ PRODUCT_PACKAGES += \
     memtrack.sdm660 \
     libdisplayconfig \
     libtinyxml \
+    libtinyxml.vendor \
     libqdMetaData \
     libqdMetaData.system
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@2.0-impl:64 \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
@@ -210,6 +213,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint feature
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
     fingerprint.sdm660 \
     fingerprintd \
     libunwind-vendor \
@@ -225,6 +229,7 @@ PRODUCT_PACKAGES += \
 
 # GPS / Location
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.0-impl-qti \
     android.hardware.gnss@2.0-service-qti \
     libbatching \
@@ -325,6 +330,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti \
     vendor.qti.hardware.perf@2.0.vendor
 
@@ -359,6 +365,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.0.vendor \
     android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.0.vendor \
     rild \
     librmnetctl \
     libprotobuf-cpp-full
@@ -411,7 +418,6 @@ $(call inherit-product, build/target/product/verity.mk)
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl:64 \
     android.hardware.vibrator@1.0-service
-
 
 # VNDK
 PRODUCT_PACKAGES += \
