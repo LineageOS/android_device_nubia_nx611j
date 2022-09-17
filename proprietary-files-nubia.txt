@@ -544,8 +544,13 @@ vendor/lib64/libSecureUILib.so
 vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
 
-# Fingerprint
-vendor/lib64/hw/fingerprint.sunwave.so:vendor/lib64/hw/fingerprint.sdm660.so
+# Fingerprint - from stock firmware and hex edit
+vendor/lib64/libteeclientjni.so|c8c82094af15134d4bcfd2a3bb61fd83ae665b5c
+vendor/lib64/hw/fingerprint.sunwave.so:vendor/lib64/hw/fingerprint.sdm660.so|b5e10415ea6f12eaf7be92ddbb23dacb39b7f543
+lib/android.hardware.biometrics.fingerprint@2.1.so:vendor/lib/android.hardware.biometrics.fingerprint@2.1.so|d038dc9211ac279496b8b0bb61c1b1ebf224829d
+lib64/android.hardware.biometrics.fingerprint@2.1.so:vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so|a31789048f03c8d430e8d208cf6519f18873ccca
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.nubia|bc6631fe35c887c5ec40e922f287094b034a2e6a
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.nubia.rc|23df451fb32c4a61b188186587486722d7abb882
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
