@@ -7,10 +7,6 @@ vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
-###########################
-#  CAMERA TEST -20190919  #
-###########################
-
 # Camera HAL(- can be replaced by oss)
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libmmjpeg_interface.so
