@@ -114,20 +114,5 @@ $(SW_FP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(SW_FP_SYMLINKS)
-
-GOODIXFP_IMAGES := \
-    goodixfp.b00 goodixfp.b01 goodixfp.b02 goodixfp.b03 goodixfp.b04 goodixfp.b05 \
-    goodixfp.b06 goodixfp.mdt
-
-GOODIXFP_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(GOODIXFP_IMAGES)))
-$(GOODIXFP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "GOODIXFP firmware link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /firmware/image/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(GOODIXFP_SYMLINKS)
-
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
