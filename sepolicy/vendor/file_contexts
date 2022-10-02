@@ -17,13 +17,8 @@
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3                 u:object_r:public_adsprpcd_file:s0
 
-# IR
-/dev/lirc0                                      u:object_r:spidev_device:s0
-/dev/spidev7.1                                  u:object_r:spidev_device:s0
-
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.nx611j                     u:object_r:hal_light_default_exec:s0
-
 
 # Root files
 /persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
