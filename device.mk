@@ -169,7 +169,6 @@ PRODUCT_PACKAGES += \
     memtrack.sdm660 \
     libdisplayconfig \
     libtinyxml \
-    libtinyxml.vendor \
     libqdMetaData \
     libqdMetaData.system
 
@@ -184,8 +183,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.renderscript@1.0-impl \
     android.frameworks.displayservice@1.0 \
-    vendor.display.config@1.1 \
-    vendor.display.config@1.1_vendor
+    vendor.display.config@1.1
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -358,8 +356,7 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson \
-    libjson.vendor
+    libjson
 
 # Releasetools
 PRODUCT_PACKAGES += \
@@ -401,8 +398,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
-    libsensorndkbridge \
-    sensors.sdm660
+    libsensorndkbridge
 
 # Sensor HAL conf file
 PRODUCT_COPY_FILES += \
