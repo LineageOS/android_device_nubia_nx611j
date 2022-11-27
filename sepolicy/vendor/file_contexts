@@ -81,4 +81,5 @@
 /persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
 
 # Thermal
+/sys/devices/soc/780000.qcom,msm-core/uio/uio1(/.*)?                    u:object_r:sysfs_uio_file:s0
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
