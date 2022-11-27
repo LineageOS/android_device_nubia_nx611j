@@ -6,6 +6,9 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.nubia_nx611j		u:object_r:hal_fingerprint_default_exec:s0
 /dev/sunwave_fp		                                           u:object_r:fingerprint_device:s0
 
+# Fingerprint (fpdsensor)
+/data/fpdsensor(/.*)?		                                    u:object_r:fpdsensor_data_file:s0
+
 # Firmware
 /firmware                                       u:object_r:firmware_file:s0
 /bt_firmware                                    u:object_r:bt_firmware_file:s0

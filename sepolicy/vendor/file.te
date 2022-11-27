@@ -6,6 +6,8 @@ type sysfs_fingerprint_wakeup, sysfs_type, fs_type;
 type sysfs_fingerprint, sysfs_type, fs_type;
 type sysfs_fingerprint_irq, sysfs_type, fs_type;
 
+# Fingerprint (fpdsensor)
+type fpdsensor_data_file, file_type, core_data_file_type, data_file_type;
 
 # Lcd
 type sysfs_tp_lcd, sysfs_type, fs_type;
