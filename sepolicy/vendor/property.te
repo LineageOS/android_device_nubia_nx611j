@@ -3,3 +3,6 @@ type hal_fingerprint_prop, property_type;
 
 # Thermal
 type thermal_engine_prop, property_type;
+
+# Touchscreen (gesture)
+type touch_prop, property_type;

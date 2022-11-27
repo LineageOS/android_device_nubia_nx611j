@@ -28,6 +28,10 @@ ro.boot.fp.                             u:object_r:hal_fingerprint_prop:s0
 ro.boot.fpsensor                        u:object_r:hal_fingerprint_prop:s0
 sys.fp.                                 u:object_r:hal_fingerprint_prop:s0
 
+# Touchscreen (gesture)
+persist.gesture.swapbuttons             u:object_r:touch_prop:s0
+persist.gesture.palmsleep               u:object_r:touch_prop:s0
+
 # Media
 gpu.stats.debug.level                   u:object_r:vendor_default_prop:s0
 

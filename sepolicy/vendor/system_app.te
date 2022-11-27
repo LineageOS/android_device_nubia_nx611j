@@ -1,0 +1,3 @@
+# Touchscreen (gesture)
+allow system_app sysfs_touchscreen:file { rw_file_perms };
+set_prop(system_app, touch_prop);
