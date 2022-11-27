@@ -4,6 +4,16 @@ type public_adsprpcd_file, file_type;
 # Fingerprint
 type sysfs_fingerprint, fs_type, sysfs_type;
 
+# Lcd
+type sysfs_tp_lcd, sysfs_type, fs_type;
+
+# Led
+type sysfs_nubia_breathlight, sysfs_type, fs_type;
+
+# Light
+type sysfs_rgb_cal, sysfs_type, fs_type;
+type sysfs_light_sensor, sysfs_type, fs_type;
+
 # Thermal
 type thermal_data_file, file_type, data_file_type;
 

@@ -11,8 +11,34 @@
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3                 u:object_r:public_adsprpcd_file:s0
 
-# Light HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.nx611j                     u:object_r:hal_light_default_exec:s0
+# Lcd
+/sys/kernel/lcd_enhance(/.*)? 		        u:object_r:sysfs_tp_lcd:s0
+
+# Led
+/sys/class/leds/nubia_led/fade_parameter	  u:object_r:sysfs_nubia_breathlight:s0
+/sys/class/leds/nubia_led/grade_parameter	  u:object_r:sysfs_nubia_breathlight:s0
+/sys/class/leds/nubia_led/blink_mode		  u:object_r:sysfs_nubia_breathlight:s0
+/sys/class/leds/nubia_led/brightness		  u:object_r:sysfs_nubia_breathlight:s0
+/sys/class/leds/nubia_led/outn		         u:object_r:sysfs_nubia_breathlight:s0
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/nubia_led/outn		u:object_r:sysfs_nubia_breathlight:s0
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/nubia_led/blink_mode		u:object_r:sysfs_nubia_breathlight:s0
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/nubia_led/brightness		u:object_r:sysfs_nubia_breathlight:s0
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/nubia_led/fade_parameter		u:object_r:sysfs_nubia_breathlight:s0
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/nubia_led/grade_parameter		u:object_r:sysfs_nubia_breathlight:s0
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/modalias    u:object_r:sysfs_nubia_breathlight:s0
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/modalias    u:object_r:sysfs_nubia_breathlight:s0
+
+# Light
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.nx611j            u:object_r:hal_light_default_exec:s0
+/sys/class/light/light/chip_name		                                            u:object_r:sysfs_rgb_cal:s0
+/sys/class/light/light/calibrate		                                            u:object_r:sysfs_rgb_cal:s0
+/sys/class/light/light/light_value		                                     u:object_r:sysfs_rgb_cal:s0
+/sys/class/light/light/fac_calibrate		                                     u:object_r:sysfs_rgb_cal:s0
+/sys/devices/virtual/light/light/tp_cfg		                                     u:object_r:sysfs_rgb_cal:s0
+/sys/devices/virtual/light/light/calibrate		                               u:object_r:sysfs_rgb_cal:s0
+/sys/devices/virtual/light/light/chip_name		                               u:object_r:sysfs_rgb_cal:s0
+/sys/devices/virtual/light/light/light_value		                               u:object_r:sysfs_rgb_cal:s0
+/sys/devices/virtual/light/light/fac_calibrate		                               u:object_r:sysfs_rgb_cal:s0
 
 # Root files
 /persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
