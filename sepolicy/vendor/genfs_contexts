@@ -1,5 +1,7 @@
 # Battery
 genfscon sysfs /devices/soc/c176000.i2c/i2c-2/2-001d            u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-02/800f000.qcom,spmi:qcom,pm660l@2:qpnp,fg/power_supply                                                    u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-02/800f000.qcom,spmi:qcom,pm660l@2:qcom,qpnp-smb2/power_supply                                                    u:object_r:sysfs_batteryinfo:s0
 
 # Camera
 genfscon sysfs /devices/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@3/video4linux/video5/name                                     u:object_r:sysfs_graphics:s0
