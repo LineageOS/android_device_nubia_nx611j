@@ -1,4 +1,11 @@
+# Audio
 type public_adsprpcd_file, file_type;
+
+# Fingerprint
 type sysfs_fingerprint, fs_type, sysfs_type;
-type sysfs_touchpanel, fs_type, sysfs_type;
+
+# Thermal
 type thermal_data_file, file_type, data_file_type;
+
+# Touchscreen
+type sysfs_touchpanel, fs_type, sysfs_type;

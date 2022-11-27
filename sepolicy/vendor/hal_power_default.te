@@ -1,2 +1,4 @@
+#============= hal_power_default ==============
+# Touchscreen
 allow hal_power_default sysfs_touchpanel:dir search;
 allow hal_power_default sysfs_touchpanel:file rw_file_perms;

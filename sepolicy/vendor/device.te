@@ -1,2 +1,4 @@
+# Fingerprint
 type fingerprint_device, dev_type;
-type spidev_device, dev_type;
+
+

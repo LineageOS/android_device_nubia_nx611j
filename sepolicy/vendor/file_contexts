@@ -1,13 +1,3 @@
-# Biometric
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.nubia_nx611j u:object_r:hal_fingerprint_sdm660_exec:s0
-
-# Fingerprint
-/data/gf_data(/.*)?                             u:object_r:fingerprintd_data_file:s0
-/data/vendor/fpc(/.*)?                          u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/gf_data(/.*)?                      u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/goodix(/.*)?                       u:object_r:fingerprint_vendor_data_file:s0
-/dev/goodix_fp                                  u:object_r:fingerprint_device:s0
-
 # Firmware
 /firmware                                       u:object_r:firmware_file:s0
 /bt_firmware                                    u:object_r:bt_firmware_file:s0

@@ -1,2 +1,5 @@
+# Fingerprint
 type hal_fingerprint_prop, property_type;
+
+# Thermal
 type thermal_engine_prop, property_type;
