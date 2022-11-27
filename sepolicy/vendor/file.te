@@ -26,7 +26,7 @@ type sysfs_prox_cal, sysfs_type, fs_type;
 type thermal_data_file, file_type, data_file_type;
 
 # Touchscreen
-type sysfs_touchpanel, fs_type, sysfs_type;
+type sysfs_touchscreen, sysfs_type, fs_type;
 
 # Remote storage
 type debugfs_rmts, debugfs_type, fs_type;

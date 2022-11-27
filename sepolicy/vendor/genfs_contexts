@@ -19,4 +19,4 @@ genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:
 genfscon sysfs /devices/soc/c900000.qcom,mdss_mdp:qcom,mdss_fb_primary/leds/lcd-backlight/brightness          u:object_r:sysfs_graphics:s0
 
 # Touchpanel
-genfscon sysfs /touchpanel                                      u:object_r:sysfs_touchpanel:s0
+genfscon sysfs /class/touch/tpnode/synaptics                    u:object_r:sysfs_touchscreen:s0

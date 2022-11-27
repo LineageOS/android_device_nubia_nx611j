@@ -8,3 +8,5 @@ allow system_server sysfs_nubia_breathlight:file { open read write };
 # Proximity
 allow system_server sysfs_prox_cal:file { open write };
 
+# Touchscreen
+allow system_server sysfs_sectouch:file { rw_file_perms };
