@@ -40,6 +40,43 @@
 /sys/devices/virtual/light/light/light_value		                               u:object_r:sysfs_rgb_cal:s0
 /sys/devices/virtual/light/light/fac_calibrate		                               u:object_r:sysfs_rgb_cal:s0
 
+# Proximity
+/sys/class/proximity/proximity/reg		                            u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/threshold		                     u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/chip_name		                     u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_init		                     u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_debug		                     u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_value		                     u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_thres		                     u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_data_max		                     u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_offset_cal		                     u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/reg		                     u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_thres_min		                     u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_thres_max		                     u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/threshold		              u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/chip_name		              u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_init		              u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_thres		              u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_calibrate_start		              u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_debug		              u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_value		              u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_offset_cal_start		              u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_calibrate_verify		              u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_offset_cal_verify		              u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_data_max		       u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_data_safe_range_min		       u:object_r:sysfs_prox_cal:s0
+/sys/class/proximity/proximity/prox_data_safe_range_max		       u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_thres_min		       u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_thres_max		       u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_offset_cal		       u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_uncover_max		       u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_calibrate_start		u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_calibrate_verify		u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_offset_cal_start		u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_offset_cal_verify		u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_data_safe_range_min		u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity/prox_data_safe_range_max		u:object_r:sysfs_prox_cal:s0
+
 # Root files
 /persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
 

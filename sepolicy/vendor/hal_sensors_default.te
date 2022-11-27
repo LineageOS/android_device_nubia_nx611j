@@ -8,3 +8,5 @@ set_prop(hal_sensors_default, camera_prop)
 allow hal_sensors_default sysfs_light_sensor:dir search;
 allow hal_sensors_default sysfs_light_sensor:file { read write open };
 
+# Proximity
+allow hal_sensors_default sysfs_prox_cal:file { write open };

@@ -5,3 +5,6 @@ allow system_server sysfs_battery_supply:file { getattr open read };
 # Light
 allow system_server sysfs_nubia_breathlight:file { open read write };
 
+# Proximity
+allow system_server sysfs_prox_cal:file { open write };
+
