@@ -2,6 +2,10 @@
 /sys/devices(/platform)?/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/[a-z0-9]+\.i2c:qcom,[a-z0-9]+@[a-z0-9]:qcom,smb[a-z0-9]+-parallel-slave@[0-9]+/power_supply/parallel(/.*)?                                              u:object_r:sysfs_usb_supply:s0
 /sys/devices(/platform)?/soc/[a-f0-9]+.qcom,spmi/spmi-[0-9]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:neo,battery/power_supply/neo-battery(/.*)?                                                                    u:object_r:sysfs_battery_supply:s0
 
+# Fingerprint
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.nubia_nx611j		u:object_r:hal_fingerprint_default_exec:s0
+/dev/sunwave_fp		                                           u:object_r:fingerprint_device:s0
+
 # Firmware
 /firmware                                       u:object_r:firmware_file:s0
 /bt_firmware                                    u:object_r:bt_firmware_file:s0
