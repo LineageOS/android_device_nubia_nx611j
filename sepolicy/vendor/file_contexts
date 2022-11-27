@@ -77,6 +77,9 @@
 /sys/devices/virtual/proximity/proximity/prox_data_safe_range_min		u:object_r:sysfs_prox_cal:s0
 /sys/devices/virtual/proximity/proximity/prox_data_safe_range_max		u:object_r:sysfs_prox_cal:s0
 
+# Remote storage
+/sys/kernel/debug/rmt_storage/rmts                            u:object_r:debugfs_rmts:s0
+
 # Root files
 /persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
 
