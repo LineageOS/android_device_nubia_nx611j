@@ -131,11 +131,6 @@ on boot
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/device/extldo
     chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
 
-    #add for sunwave fingerprint start
-    chown system system /dev/sunwave_fp
-    chmod 0660 /dev/sunwave_fp
-    #add for sunwave fingerprint end
-
     # This location is used by QCRIL to host UNIX domain
     # socket files used for internal IPC within QCRIL
     # modules

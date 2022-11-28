@@ -35,6 +35,11 @@ on boot
     chown system system /sys/class/timed_output/vibrator_drv2605/enable
     chmod 664  /sys/class/timed_output/vibrator_drv2605/enable
 
+    #add for sunwave fingerprint start
+    chown system system /dev/sunwave_fp
+    chmod 0660 /dev/sunwave_fp
+    #add for sunwave fingerprint end
+
     # NFC
     chmod 777 /dev/bcm2079x
     chown nfc nfc /dev/bcm2079x
