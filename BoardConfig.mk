@@ -74,7 +74,7 @@ OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # DT2W
-TARGET_TAP_TO_WAKE_NODE := "/data/tp/easy_wakeup_gesture"
+TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/tp/wake_gesture"
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
