@@ -7,22 +7,11 @@ on boot
     chmod 0666 /mnt/vendor/persist/bluetooth/.bt_nv.bin
     chmod 0666 /mnt/vendor/persist/wlan_mac.bin
     chown wifi wifi /mnt/vendor/persist/wlan_mac.bin
-#add device for IRControl
-	chown system system /sys/class/ir_remote/ir_remote/enable
-	chmod 0644 /sys/class/ir_remote/ir_remote/enable
 
-	chown system system /dev/ttyMSM1
-	chmod 0664 /dev/ttyMSM1
+    chown system system /dev/ttyMSM1
+    chmod 0664 /dev/ttyMSM1
 
-        mkdir /data/vendor/nubiaeffect 0777 camera camera
-
-	#for fpc
-	mkdir /dev/fpcSocket 0770 system system
-	chmod 0777 /dev/fpcSocket
-	chown system system /sys/bus/platform/devices/1.fpc1020/irq
-	chmod 0660 /sys/bus/platform/devices/1.fpc1020/irq
-	chown system system /sys/bus/platform/devices/1.fpc1020/wakeup_enable
-	chmod 0660 /sys/bus/platform/devices/1.fpc1020/wakeup_enable
+    mkdir /data/vendor/nubiaeffect 0777 camera camera
 
     chown system system /sys/class/leds/nubia_led/brightness
     chown system system /sys/class/leds/nubia_led/fade_parameter
@@ -31,25 +20,10 @@ on boot
     chown system system /sys/class/leds/nubia_led/blink_mode
     chown system system /sys/class/leds/nubia_led/debug
 
-    chown system system /sys/class/leds/vibrator/debug
-    chown system system /sys/class/timed_output/vibrator_drv2605/enable
-    chmod 664  /sys/class/timed_output/vibrator_drv2605/enable
-
     #add for sunwave fingerprint start
     chown system system /dev/sunwave_fp
     chmod 0660 /dev/sunwave_fp
     #add for sunwave fingerprint end
-
-    # NFC
-    chmod 777 /dev/bcm2079x
-    chown nfc nfc /dev/bcm2079x
-
-    # NFC: create data/nfc for nv storage
-    mkdir /data/nfc 770 nfc nfc
-    mkdir /data/vendor/nfc 770 nfc nfc
-
-    # NFC HAL suffix
-    setprop ro.hardware.nfc_nci bcm2079x.default
 
     # Nubia begin feature add sensors node
     chmod 0777 /persist/sensors
@@ -57,16 +31,6 @@ on boot
     # hall_device
     chown system system /sys/class/hall_device/hall_device/enable
     chmod 0644 /sys/class/hall_device/hall_device/enable
-
-    #ir remote
-    chown system system /sys/class/ir_remote/ir_remote/enable
-    chmod 0644 /sys/class/ir_remote/ir_remote/enable
-
-    #chown system system /sys/class/leds/vibrator/debug
-    chown system system /sys/class/timed_output/vibrator_drv2605/enable
-    chmod 664  /sys/class/timed_output/vibrator_drv2605/enable
-    chmod 664 /dev/drv2605
-    chown system system /dev/drv2605
 
     # proximity
     chown system system /sys/class/proximity/proximity/enable
@@ -187,35 +151,9 @@ on boot
     chown system system /sys/class/leds/nubia_led/outn
     chown system system /sys/class/leds/nubia_led/blink_mode
 
-#nubia, tp&lcd node start
+#nubia, tp & lcd node start
 on post-fs-data
-    mkdir /data/vendor/tp 0775 system system
-    rm /data/vendor/tp/ic_ver
-    rm /data/vendor/tp/reset
-    rm /data/vendor/tp/ic_detect
-    rm /data/vendor/tp/start_update
-    rm /data/vendor/tp/easy_wakeup_gesture
-    rm /data/vendor/tp/easy_sleep_palm
-    rm /data/vendor/tp/read_rt2
-    rm /data/vendor/tp/read_rt3
-    rm /data/vendor/tp/start_user_update
 
-    chown system system /sys/class/touch/tpnode/synaptics/0dbutton
-    chown system system /sys/class/touch/tpnode/synaptics/ic_ver
-    symlink /sys/class/touch/tpnode/synaptics/ic_ver /data/vendor/tp/ic_ver
-    chown system system /sys/class/touch/tpnode/synaptics/reset
-    symlink /sys/class/touch/tpnode/synaptics/reset /data/vendor/tp/reset
-    chown system system /sys/class/touch/tpnode/synaptics/device/ic_detect
-    symlink /sys/class/touch/tpnode/synaptics/device/ic_detect /data/vendor/tp/ic_detect
-	
-    symlink /sys/class/touch/tpnode/synaptics/device/start_update /data/vendor/tp/start_update
-    chown system system /sys/class/touch/tpnode/synaptics/wake_gesture
-    symlink /sys/class/touch/tpnode/synaptics/wake_gesture /data/vendor/tp/easy_wakeup_gesture
-    chown system system /sys/class/touch/tpnode/synaptics/palm_sleep
-    symlink /sys/class/touch/tpnode/synaptics/palm_sleep /data/vendor/tp/easy_sleep_palm
-    write /sys/class/touch/tpnode/synaptics/start_update 1
-    chown system system /sys/kernel/lcd_enhance/colortmp
-    chown system system /sys/kernel/lcd_enhance/saturation
     chown system system /sys/kernel/lcd_enhance/cabc
     chown system system /sys/kernel/lcd_enhance/lcd_power_on
     chown system system /sys/kernel/lcd_enhance/lcd_power_off
