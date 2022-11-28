@@ -157,42 +157,42 @@ on post-fs-data
     chown system system /sys/kernel/lcd_enhance/cabc
     chown system system /sys/kernel/lcd_enhance/lcd_power_on
     chown system system /sys/kernel/lcd_enhance/lcd_power_off
-    chown system system /sys/class/touch/tpnode/synaptics/f54/read_rt2
-    chown system system /sys/class/touch/tpnode/synaptics/f54/read_rt3
-    chown system system /sys/class/touch/tpnode/synaptics/remap
-    symlink /sys/class/touch/tpnode/synaptics/f54/read_rt2 /data/vendor/tp/read_rt2
-    symlink /sys/class/touch/tpnode/synaptics/f54/read_rt3 /data/vendor/tp/read_rt3
-    chown system system /sys/class/touch/tpnode/synaptics/device/start_user_update
-    symlink /sys/class/touch/tpnode/synaptics/device/start_user_update /data/vendor/tp/start_user_update
-    write /sys/class/touch/tpnode/synaptics/remap 18
 
-#nubia, tp&lcd node end
+    mkdir /data/tp 0775 system system
+    mkdir /data/tp/debug 0775 system system
 
-on property:gsm.call.other_to_gsm=1
-    write /sys/class/touch/tpnode/synaptics/home 194
-    write /sys/class/touch/tpnode/synaptics/menu 194
-    write /sys/class/touch/tpnode/synaptics/back 194
+    chown system system /proc/android_touch/ic_ver
+    symlink /proc/android_touch/ic_ver /data/tp/ic_ver
 
-on property:gsm.call.other_to_gsm=2
-    write /sys/class/touch/tpnode/synaptics/home 147
-    write /sys/class/touch/tpnode/synaptics/menu 147
-    write /sys/class/touch/tpnode/synaptics/back 166
+    chown system system /proc/android_touch/ic_detect
+    symlink /proc/android_touch/ic_detect /data/tp/ic_detect
+
+    chown system system /proc/android_touch/DC_data
+    symlink /proc/android_touch/DC_data /data/tp/DC_data
+    symlink /proc/android_touch/DC_data /data/tp/debug/DC_data
+
+    chown system system /sys/kernel/tp/palm
+    symlink /sys/kernel/tp/palm /data/tp/easy_sleep_palm
+
+    chown system system /sys/kernel/tp/wake_gesture
+    symlink /sys/kernel/tp/wake_gesture /data/tp/easy_wakeup_gesture
+
+    chown system system /proc/android_touch/IIR_data
+    symlink /proc/android_touch/IIR_data /data/tp/debug/IIR_data
+
+    chown system system /proc/android_touch/BASEDC_data
+    symlink /proc/android_touch/BASEDC_data /data/tp/debug/BASEDC_data
+
+    chown system system /proc/android_touch/user_update
+    symlink /proc/android_touch/IIR_data /data/tp/user_update
 
 on property:sys.tp.wakeup=*
-    write /sys/class/touch/tpnode/synaptics/wake_gesture ${sys.tp.wakeup}
+    write /data/tp/easy_wakeup_gesture ${sys.tp.wakeup}
 
 on property:sys.tp.palmsleep=*
-    write /sys/class/touch/tpnode/synaptics/palm_sleep ${sys.tp.palmsleep}
-#nubia end
+    write /data/tp/easy_sleep_palm ${sys.tp.palmsleep}
 
-on property:persist.gesture.swapbuttons=*
-    write /sys/class/touch/tpnode/synaptics/swap_buttons ${persist.gesture.swapbuttons}
-
-on property:persist.gesture.palmsleep=*
-    write /sys/class/touch/tpnode/synaptics/palm_sleep ${persist.gesture.palmsleep}
-
-on property:persist.gesture.edgeslop=*
-    write /sys/class/touch/tpnode/synaptics/remap ${persist.gesture.edgeslop}
+#nubia, tp & lcd node end
 
 # nubia Disable SSR to SoC restart
 on property:persist.vendor.ssr.restart_level=1
@@ -219,9 +219,3 @@ on property:persist.vendor.ap.restart_level=0
 
 on property:persist.vendor.ap.restart_level=1
     write /sys/module/msm_poweroff/parameters/download_mode 1
-
-on property:sys.tp.wakeup=*
-    write /sys/class/touch/tpnode/synaptics/wake_gesture ${sys.tp.wakeup}
-
-on property:sys.tp.palmsleep=*
-    write /sys/class/touch/tpnode/synaptics/palm_sleep ${sys.tp.palmsleep}
