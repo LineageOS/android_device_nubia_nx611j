@@ -22,6 +22,7 @@ persist.vendor.camera.                  u:object_r:camera_prop:s0
 vendor.camera.eis.gyro_name             u:object_r:camera_prop:s0
 vidc.enc.dcvs.extra-buff-count          u:object_r:camera_prop:s0
 persist.camera.debug.logfile            u:object_r:camera_prop:s0
+ro.total.camera.                        u:object_r:camera_prop:s0
 
 # Fingerprint
 gf.debug.dump_data                      u:object_r:vendor_default_prop:s0
