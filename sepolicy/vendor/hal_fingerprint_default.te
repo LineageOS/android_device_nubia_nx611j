@@ -1,6 +1,8 @@
 #============= hal_fingerprint_default ==============
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
+add_service(hal_fingerprint_default, sf_service);
+
 allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
 allow hal_fingerprint_default fingerprintd_data_file:dir { create_dir_perms };
 allow hal_fingerprint_default fingerprintd_data_file:file { create_file_perms };
@@ -22,6 +24,8 @@ allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
 allow hal_fingerprint_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 allow hal_fingerprint_default input_device:dir r_dir_perms;
 allow hal_fingerprint_default input_device:chr_file r_file_perms;
+allow hal_fingerprint_default sf_service:service_manager add;
+allow hal_fingerprint_default sf_service:service_manager find;
 
 r_dir_file(hal_fingerprint_default, firmware_file);
 r_dir_file(hal_fingerprint_default, sysfs_graphics);
