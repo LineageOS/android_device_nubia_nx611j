@@ -9,9 +9,9 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
 # Camera HAL(- can be replaced by oss)
 vendor/lib/hw/camera.sdm660.so
+vendor/lib/libmm-qcamera.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmlib2d_interface.so
-vendor/lib/libmm-qcamera.so
 vendor/lib/libqomx_core.so
 
 # Camera (- nubia specific)
@@ -24,41 +24,42 @@ lib/libarcsoft_night_shot.so:vendor/lib/libarcsoft_night_shot.so
 lib/libmpbase.so:vendor/lib/libmpbase.so
 lib/libnubia_effect.so:vendor/lib/libnubia_effect.so
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
+lib64/libAlgorithm.so:vendor/lib64/libAlgorithm.so
+lib64/libAltek_Alignment.so:vendor/lib64/libAltek_Alignment.so
+lib64/libBigAperture.so:vendor/lib64/libBigAperture.so
+lib64/libBuffer.so:vendor/lib64/libBuffer.so
+lib64/libIndependenceUtil.so:vendor/lib64/libIndependenceUtil.so
 lib64/libNubiaImageAlgorithm.so:vendor/lib64/libNubiaImageAlgorithm.so
+lib64/libPrettyWaterMark.so:vendor/lib64/libPrettyWaterMark.so
 lib64/libarcsoft_beautyshot.so:vendor/lib64/libarcsoft_beautyshot.so
 lib64/libarcsoft_beautyshot_image_algorithm.so:vendor/lib64/libarcsoft_beautyshot_image_algorithm.so
 lib64/libarcsoft_beautyshot_video_algorithm.so:vendor/lib64/libarcsoft_beautyshot_video_algorithm.so
 lib64/libarcsoft_dualcam_refocus.so:vendor/lib64/libarcsoft_dualcam_refocus.so
 lib64/libarcsoft_night_shot.so:vendor/lib64/libarcsoft_night_shot.so
-lib64/libmpbase.so:vendor/lib64/libmpbase.so
-lib64/libnubia_effect.so:vendor/lib64/libnubia_effect.so
-lib64/libtrueportrait.so:vendor/lib64/libtrueportrait.so
-lib64/libAlgorithm.so:vendor/lib64/libAlgorithm.so
-lib64/libAltek_Alignment.so:vendor/lib64/libAltek_Alignment.so
 lib64/libavcodec.so:vendor/lib64/libavcodec.so
-lib64/libavformat.so:vendor/lib64/libavformat.so
 lib64/libavfilter.so:vendor/lib64/libavfilter.so
+lib64/libavformat.so:vendor/lib64/libavformat.so
 lib64/libavutil.so:vendor/lib64/libavutil.so
-lib64/libBigAperture.so:vendor/lib64/libBigAperture.so
-lib64/libBuffer.so:vendor/lib64/libBuffer.so
 lib64/libbuffer_manager.so:vendor/lib64/libbuffer_manager.so
 lib64/libdngcreator.so:vendor/lib64/libdngcreator.so
 lib64/libhistutil.so:vendor/lib64/libhistutil.so
-lib64/libIndependenceUtil.so:vendor/lib64/libIndependenceUtil.so
 lib64/libmorpho_panorama_gp.so:vendor/lib64/libmorpho_panorama_gp.so
+lib64/libmpbase.so:vendor/lib64/libmpbase.so
 lib64/libmulti_exposure.so:vendor/lib64/libmulti_exposure.so
 lib64/libnubia_clone.so:vendor/lib64/libnubia_clone.so
 lib64/libnubia_delay_recorder.so:vendor/lib64/libnubia_delay_recorder.so
+lib64/libnubia_effect.so:vendor/lib64/libnubia_effect.so
 lib64/libnubia_media_player.so:vendor/lib64/libnubia_media_player.so
 lib64/libnubia_trajectory.so:vendor/lib64/libnubia_trajectory.so
 lib64/libnubiajpeg.so:vendor/lib64/libnubiajpeg.so
 lib64/libpanoramahelper.so:vendor/lib64/libpanoramahelper.so
-lib64/libPrettyWaterMark.so:vendor/lib64/libPrettyWaterMark.so
 lib64/libproductinfo.so:vendor/lib64/libproductinfo.so
-lib64/libswscale.so:vendor/lib64/libswscale.so
 lib64/libswresample.so:vendor/lib64/libswresample.so
+lib64/libswscale.so:vendor/lib64/libswscale.so
+lib64/libtrueportrait.so:vendor/lib64/libtrueportrait.so
 
 vendor/lib/libarcsoft_dualcam_verification.so
+vendor/lib/libarcsoft_high_dynamic_range.so
 vendor/lib/libcalibverify.so
 vendor/lib/libchromaflash.so
 vendor/lib/libdepthmapwrapper.so
@@ -69,8 +70,8 @@ vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera_sonyimx135_eeprom.so
-vendor/lib/libmmqjpegdma.so
 vendor/lib/libmmqjpeg_codec.so
+vendor/lib/libmmqjpegdma.so
 vendor/lib/liboptizoom.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
@@ -82,7 +83,6 @@ vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libubifocus.so
 vendor/lib/libvideobokeh.so
 vendor/lib/libvideoutils.so
-vendor/lib/libarcsoft_high_dynamic_range.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/libdualcameraddm.so
 vendor/lib64/liboptizoom.so
@@ -98,8 +98,8 @@ vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/liboptizoom.so
 vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
+vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libscveBlobDescriptor.so
 vendor/lib/libscveBlobDescriptor_stub.so
@@ -235,6 +235,10 @@ vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so
 vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so
 vendor/lib/libmmcamera_optizoom_lib.so
 vendor/lib/libmmcamera_ov12a10.so
+vendor/lib/libmmcamera_ov13850.so
+vendor/lib/libmmcamera_ov13850_q13v06k.so
+vendor/lib/libmmcamera_ov13855.so
+vendor/lib/libmmcamera_ov13880.so
 vendor/lib/libmmcamera_ov2281.so
 vendor/lib/libmmcamera_ov2680.so
 vendor/lib/libmmcamera_ov2685.so
@@ -250,10 +254,6 @@ vendor/lib/libmmcamera_ov8856.so
 vendor/lib/libmmcamera_ov8856_NX611J.so
 vendor/lib/libmmcamera_ov8858.so
 vendor/lib/libmmcamera_ov8865.so
-vendor/lib/libmmcamera_ov13850.so
-vendor/lib/libmmcamera_ov13850_q13v06k.so
-vendor/lib/libmmcamera_ov13855.so
-vendor/lib/libmmcamera_ov13880.so
 vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
@@ -274,20 +274,20 @@ vendor/lib/libmmcamera_s5k3m3sm.so
 vendor/lib/libmmcamera_s5k3p3sm.so
 vendor/lib/libmmcamera_s5k3p8sp.so
 vendor/lib/libmmcamera_s5k4e8_NX611J.so
-vendor/lib/libmmcamera_sonyimx135_eeprom.so
 vendor/lib/libmmcamera_sony_imx214_eeprom.so
 vendor/lib/libmmcamera_sony_imx298_eeprom.so
 vendor/lib/libmmcamera_sony_imx378_eeprom.so
+vendor/lib/libmmcamera_sonyimx135_eeprom.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sunny_8865_eeprom.so
-vendor/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so
-vendor/lib/libmmcamera_sunny_gt24c64a_imx376_eeprom.so
 vendor/lib/libmmcamera_sunny_gt24c64_imx298_eeprom.so
 vendor/lib/libmmcamera_sunny_gt24c64_s5k2l7_eeprom.so
 vendor/lib/libmmcamera_sunny_gt24c64_s5k2l7sx_eeprom.so
+vendor/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so
+vendor/lib/libmmcamera_sunny_gt24c64a_imx376_eeprom.so
 vendor/lib/libmmcamera_sunny_ov13855_eeprom.so
-vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so
 vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so
+vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so
 vendor/lib/libmmcamera_sunny_s5k2x7sx_eeprom.so
 vendor/lib/libmmcamera_sunny_s5k4e8_eeprom.so
 vendor/lib/libmmcamera_sw2d_lib.so
@@ -332,9 +332,9 @@ vendor/lib/libactuator_dw9718s.so
 
 # Camera xml
 vendor/etc/camera/camera_config.xml
-vendor/etc/camera/s5k2x7sx_chromatix.xml
-vendor/etc/camera/ov8856_chromatix.xml
 vendor/etc/camera/ov8856_NX611J_chromatix.xml
+vendor/etc/camera/ov8856_chromatix.xml
+vendor/etc/camera/s5k2x7sx_chromatix.xml
 vendor/etc/camera/s5k4e8_NX611J_chromatix.xml
 
 # Camera chromatix
@@ -351,8 +351,8 @@ vendor/lib/libchromatix_s5k2x7sx_common_binning.so
 vendor/lib/libchromatix_s5k2x7sx_common_iso128.so
 vendor/lib/libchromatix_s5k2x7sx_common_startrack.so
 vendor/lib/libchromatix_s5k2x7sx_cpp_electron_aperture.so
-vendor/lib/libchromatix_s5k2x7sx_cpp_hfr_60.so
 vendor/lib/libchromatix_s5k2x7sx_cpp_hfr_120.so
+vendor/lib/libchromatix_s5k2x7sx_cpp_hfr_60.so
 vendor/lib/libchromatix_s5k2x7sx_cpp_light_painting.so
 vendor/lib/libchromatix_s5k2x7sx_cpp_liveshot.so
 vendor/lib/libchromatix_s5k2x7sx_cpp_microspur_snapshot.so
@@ -366,10 +366,10 @@ vendor/lib/libchromatix_s5k2x7sx_electron_aperture.so
 vendor/lib/libchromatix_s5k2x7sx_electron_aperture_3a.so
 vendor/lib/libchromatix_s5k2x7sx_fullsize_preview_3a.so
 vendor/lib/libchromatix_s5k2x7sx_fullsize_video_3a.so
-vendor/lib/libchromatix_s5k2x7sx_hfr_60_3a.so
-vendor/lib/libchromatix_s5k2x7sx_hfr_60_isp.so
 vendor/lib/libchromatix_s5k2x7sx_hfr_120_3a.so
 vendor/lib/libchromatix_s5k2x7sx_hfr_120_isp.so
+vendor/lib/libchromatix_s5k2x7sx_hfr_60_3a.so
+vendor/lib/libchromatix_s5k2x7sx_hfr_60_isp.so
 vendor/lib/libchromatix_s5k2x7sx_iso128_isp.so
 vendor/lib/libchromatix_s5k2x7sx_iso128_preview_3a.so
 vendor/lib/libchromatix_s5k2x7sx_iso128_preview_cpp.so
@@ -394,14 +394,14 @@ vendor/lib/libmmcamera_sunny_s5k2x7sx_eeprom.so
 
 vendor/lib/libchromatix_ov8856_a3_default_preview.so
 vendor/lib/libchromatix_ov8856_a3_default_video.so
+vendor/lib/libchromatix_ov8856_a3_hfr_120.so
 vendor/lib/libchromatix_ov8856_a3_hfr_60.so
 vendor/lib/libchromatix_ov8856_a3_hfr_90.so
-vendor/lib/libchromatix_ov8856_a3_hfr_120.so
 vendor/lib/libchromatix_ov8856_common.so
 vendor/lib/libchromatix_ov8856_cpp_ds_chromatix.so
+vendor/lib/libchromatix_ov8856_cpp_hfr_120.so
 vendor/lib/libchromatix_ov8856_cpp_hfr_60.so
 vendor/lib/libchromatix_ov8856_cpp_hfr_90.so
-vendor/lib/libchromatix_ov8856_cpp_hfr_120.so
 vendor/lib/libchromatix_ov8856_cpp_liveshot.so
 vendor/lib/libchromatix_ov8856_cpp_preview.so
 vendor/lib/libchromatix_ov8856_cpp_preview_facedetect.so
@@ -410,9 +410,9 @@ vendor/lib/libchromatix_ov8856_cpp_us_chromatix.so
 vendor/lib/libchromatix_ov8856_cpp_video.so
 vendor/lib/libchromatix_ov8856_default_video.so
 vendor/lib/libchromatix_ov8856_face_detect_preview.so
+vendor/lib/libchromatix_ov8856_hfr_120.so
 vendor/lib/libchromatix_ov8856_hfr_60.so
 vendor/lib/libchromatix_ov8856_hfr_90.so
-vendor/lib/libchromatix_ov8856_hfr_120.so
 vendor/lib/libchromatix_ov8856_liveshot.so
 vendor/lib/libchromatix_ov8856_mf_denoise_cpp.so
 vendor/lib/libchromatix_ov8856_postproc.so
@@ -435,6 +435,8 @@ vendor/lib/libchromatix_s5k4e8_preview.so
 vendor/lib/libchromatix_s5k4e8_snapshot.so
 
 # Camera firmware
+vendor/firmware/cpp_firmware_v1_10_0.fw
+vendor/firmware/cpp_firmware_v1_12_0.fw
 vendor/firmware/cpp_firmware_v1_1_1.fw
 vendor/firmware/cpp_firmware_v1_1_6.fw
 vendor/firmware/cpp_firmware_v1_2_0.fw
@@ -444,8 +446,6 @@ vendor/firmware/cpp_firmware_v1_5_1.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
-vendor/firmware/cpp_firmware_v1_10_0.fw
-vendor/firmware/cpp_firmware_v1_12_0.fw
 
 # Camera OIS
 vendor/lib/libois_bu63165.so
@@ -458,18 +458,18 @@ vendor/etc/qdcm_calib_data_jdi_hx83112a_1080_2160_5p65_video_dsi_panel.xml
 vendor/bin/qseecomd
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libsdedrm.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
 vendor/lib64/libsdedrm.so
 vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libSecureUILib.so
 vendor/lib64/libssd.so
-vendor/lib64/libStDrvInt.so
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.sunwave.so:vendor/lib64/hw/fingerprint.sdm660.so
@@ -477,10 +477,10 @@ vendor/lib64/hw/fingerprint.sunwave.so:vendor/lib64/hw/fingerprint.sdm660.so
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/gatekeeper.sdm660.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/hw/gatekeeper.sdm660.so
+vendor/lib/hw/gatekeeper.sdm660.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib64/hw/gatekeeper.sdm660.so
 
 # GPU firmware
 vendor/firmware/a225_pfp.fw
@@ -505,16 +505,16 @@ vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
 # Keymaster
-vendor/lib/libkeymasterutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterdeviceutils.so
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib/libkeymasterdeviceutils.so
+vendor/lib/libkeymasterprovision.so
+vendor/lib/libkeymasterutils.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
 
 # Keystore
 vendor/lib/hw/keystore.sdm660.so
@@ -524,17 +524,17 @@ vendor/lib64/hw/keystore.sdm660.so
 # Sensors -from asus x01BD
 vendor/bin/sensors.qti|f7bc782de932f6b53ac3a2f5023de56e202f19d7
 vendor/etc/sensors/sensor_def_qcomdev.conf|c673951d430942a2e27f880da5afe6c34bbcfb71
-vendor/lib/libsensor_reg.so|50f201af793aba58ce63f85c3a021bf57cf86b3c
 vendor/lib/libsensor1.so|844229f98527e40f7c4a739566c351dba878bffd
+vendor/lib/libsensor_reg.so|50f201af793aba58ce63f85c3a021bf57cf86b3c
 vendor/lib/sensors.native.so|5a9848cd2eb4065275fd7fcf3fa08a0aa3247859
-vendor/lib64/libsensor_reg.so|01d08c542f7beaa253337ec22caddec928a5bf29
 vendor/lib64/libsensor1.so|44e7a290b808225e5e3d78f3672c7cdd27e6fa9e
+vendor/lib64/libsensor_reg.so|01d08c542f7beaa253337ec22caddec928a5bf29
 vendor/lib64/sensors.native.so|e6f84a8909d2e6a812f07c9853c4b7282eec80aa
 
 # Sensors (light & proximity) -from nx611j stock
 vendor/lib/sensors.ssc.so|304cb65220d482f75075d3e4bd838bfaa400e710
-vendor/lib64/sensors.ssc.so|28b128c63d239d5e9be0ed4e853b9ad7ef204fbf
 vendor/lib64/sensors.oem.so|ccc498f4416f677bf58c41e0f99d8f7bc6f2ef53
+vendor/lib64/sensors.ssc.so|28b128c63d239d5e9be0ed4e853b9ad7ef204fbf
 
 # Sensors calibration -from asus x01BD
 framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar:vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|4b187952761a10c8f023da18c2b808036ccfc11a
@@ -562,8 +562,8 @@ vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
 
 # Thermal
-vendor/etc/thermal-engine.conf
 vendor/bin/thermal-engine
+vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
