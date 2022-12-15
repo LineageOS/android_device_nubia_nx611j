@@ -155,10 +155,6 @@ PRODUCT_PACKAGES += \
     libcamera_sdm660_shim \
     libNubiaImageAlgorithmShim \
     libfui
-    
-# ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
 
 # Component overrides
 PRODUCT_COPY_FILES += \
