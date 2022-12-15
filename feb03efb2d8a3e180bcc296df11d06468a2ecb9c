@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a0f4a1b4_d5af527d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-12-15T14:39:25Z",
+      "side": 1,
+      "message": "Why the hell do you have \"(cherry picked from commit xxxxxx)\" in every change? Please remove that, unless the upstream contains it in the message.",
+      "revId": "feb03efb2d8a3e180bcc296df11d06468a2ecb9c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
