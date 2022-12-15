@@ -1,9 +1,5 @@
 [
  {
-   "repository": "android_vendor_nubia_nx611j",
-   "target_path": "vendor/nubia/nx611j"
- },
- {
    "repository": "android_kernel_nubia_sdm660",
    "target_path": "kernel/nubia/sdm660"
  }
