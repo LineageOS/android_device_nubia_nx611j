@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "944dbd78_9463ab55",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26916
+      },
+      "writtenOn": "2022-12-16T14:58:30Z",
+      "side": 1,
+      "message": "This probably won\u0027t work. Some had to do a fixup change. See I4b207e07cc121e197181dd810026427051de127c. Better pick a better change which is doing it directly in product.prop.",
+      "revId": "2d55135b99ae5aabd856c8f3caae552b7b64c769",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
