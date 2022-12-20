@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "385c30da_7140aee1",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-12-20T17:00:36Z",
+      "side": 1,
+      "message": "You can remove this, since building 1.2 will implicitly build 1.0 and 1.1 libs.",
+      "range": {
+        "startLine": 194,
+        "startChar": 4,
+        "endLine": 194,
+        "endChar": 37
+      },
+      "revId": "b8c5216ce2783c09f553680a4668b64419a09160",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
