@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6f24c8b_c2a339cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-12-20T16:57:55Z",
+      "side": 1,
+      "message": "Only one comment regarding this particular change, just like I posted for another repo:\n\n\u003e This is wrong to be committed to this branch as the commit message is not accurate. It would be fine if you did so in 19.1. Alternatively you can pick https://review.lineageos.org/q/I1af8461f8ad82afbb21b43dd6968e824ea89f5d6",
+      "revId": "e85caf056902508657d77b5a69a0aebcfc9d7078",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
