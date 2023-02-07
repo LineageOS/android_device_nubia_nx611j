@@ -177,3 +177,6 @@ ro.vendor.sensors.mot_detect=true
 
 # Time
 persist.vendor.delta_time.enable=true
+
+# Zygote
+zygote.critical_window.minute=10
