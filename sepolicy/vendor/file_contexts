@@ -1,98 +1,37 @@
-# Battery
-/sys/devices(/platform)?/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/[a-z0-9]+\.i2c:qcom,[a-z0-9]+@[a-z0-9]:qcom,smb[a-z0-9]+-parallel-slave@[0-9]+/power_supply/parallel(/.*)?                                              u:object_r:sysfs_usb_supply:s0
-/sys/devices(/platform)?/soc/[a-f0-9]+.qcom,spmi/spmi-[0-9]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:neo,battery/power_supply/neo-battery(/.*)?                                                                    u:object_r:sysfs_battery_supply:s0
-
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.nubia_nx611j		u:object_r:hal_fingerprint_default_exec:s0
-/dev/sunwave_fp		                                           u:object_r:fingerprint_device:s0
+/dev/sunwave_fp		                        u:object_r:fingerprint_device:s0
 
 # Fingerprint (fpdsensor)
-/data/fpdsensor(/.*)?		                                    u:object_r:fpdsensor_data_file:s0
+/data/fpdsensor(/.*)?		                u:object_r:fpdsensor_data_file:s0
 
 # Firmware
 /firmware                                       u:object_r:firmware_file:s0
 /bt_firmware                                    u:object_r:bt_firmware_file:s0
 
-# Hexagon DSP-side executable needed for Halide operation
-# This is labeled as public_adsprpcd_file as it needs to be read by apps
-# (e.g. Google Camera App)
-/mnt/vendor/dsp/fastrpc_shell_3                 u:object_r:public_adsprpcd_file:s0
-
 # Lcd
-/sys/kernel/lcd_enhance(/.*)? 		        u:object_r:sysfs_tp_lcd:s0
+/sys/kernel/lcd_enhance(/.*)? 		         u:object_r:sysfs_tp_lcd:s0
 
 # Led
-/sys/class/leds/nubia_led/fade_parameter	  u:object_r:sysfs_nubia_breathlight:s0
-/sys/class/leds/nubia_led/grade_parameter	  u:object_r:sysfs_nubia_breathlight:s0
-/sys/class/leds/nubia_led/blink_mode		  u:object_r:sysfs_nubia_breathlight:s0
-/sys/class/leds/nubia_led/brightness		  u:object_r:sysfs_nubia_breathlight:s0
-/sys/class/leds/nubia_led/outn		         u:object_r:sysfs_nubia_breathlight:s0
-/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/nubia_led/outn		u:object_r:sysfs_nubia_breathlight:s0
-/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/nubia_led/blink_mode		u:object_r:sysfs_nubia_breathlight:s0
-/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/nubia_led/brightness		u:object_r:sysfs_nubia_breathlight:s0
-/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/nubia_led/fade_parameter		u:object_r:sysfs_nubia_breathlight:s0
-/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/nubia_led/grade_parameter		u:object_r:sysfs_nubia_breathlight:s0
-/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/modalias    u:object_r:sysfs_nubia_breathlight:s0
-/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/modalias    u:object_r:sysfs_nubia_breathlight:s0
+/sys/class/leds(/.*)?		                 u:object_r:sysfs_leds:s0
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/modalias    u:object_r:sysfs_leds:s0
 
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.nx611j            u:object_r:hal_light_default_exec:s0
-/sys/class/light/light/chip_name		                                            u:object_r:sysfs_rgb_cal:s0
-/sys/class/light/light/calibrate		                                            u:object_r:sysfs_rgb_cal:s0
-/sys/class/light/light/light_value		                                     u:object_r:sysfs_rgb_cal:s0
-/sys/class/light/light/fac_calibrate		                                     u:object_r:sysfs_rgb_cal:s0
-/sys/devices/virtual/light/light/tp_cfg		                                     u:object_r:sysfs_rgb_cal:s0
-/sys/devices/virtual/light/light/calibrate		                               u:object_r:sysfs_rgb_cal:s0
-/sys/devices/virtual/light/light/chip_name		                               u:object_r:sysfs_rgb_cal:s0
-/sys/devices/virtual/light/light/light_value		                               u:object_r:sysfs_rgb_cal:s0
-/sys/devices/virtual/light/light/fac_calibrate		                               u:object_r:sysfs_rgb_cal:s0
+/sys/devices/virtual/light/light(/.*)? 		                                        u:object_r:sysfs_light_sensor:s0
 
 # Proximity
-/sys/class/proximity/proximity/reg		                            u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/threshold		                     u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/chip_name		                     u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_init		                     u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_debug		                     u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_value		                     u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_thres		                     u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_data_max		                     u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_offset_cal		                     u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/reg		                     u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_thres_min		                     u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_thres_max		                     u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/threshold		              u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/chip_name		              u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_init		              u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_thres		              u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_calibrate_start		              u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_debug		              u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_value		              u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_offset_cal_start		              u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_calibrate_verify		              u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_offset_cal_verify		              u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_data_max		       u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_data_safe_range_min		       u:object_r:sysfs_prox_cal:s0
-/sys/class/proximity/proximity/prox_data_safe_range_max		       u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_thres_min		       u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_thres_max		       u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_offset_cal		       u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_uncover_max		       u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_calibrate_start		u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_calibrate_verify		u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_offset_cal_start		u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_offset_cal_verify		u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_data_safe_range_min		u:object_r:sysfs_prox_cal:s0
-/sys/devices/virtual/proximity/proximity/prox_data_safe_range_max		u:object_r:sysfs_prox_cal:s0
+/sys/devices/virtual/proximity/proximity(/.*)?   u:object_r:sysfs_proximity_sensor:s0
 
 # Remote storage
-/sys/kernel/debug/rmt_storage/rmts                            u:object_r:debugfs_rmts:s0
+/sys/kernel/debug/rmt_storage/rmts               u:object_r:debugfs_rmts:s0
 
 # Root files
-/persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
+/persist(/.*)?                                   u:object_r:mnt_vendor_file:s0
 
 # Thermal
-/sys/devices/soc/780000.qcom,msm-core/uio/uio1(/.*)?                    u:object_r:sysfs_uio_file:s0
-/data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
+/sys/devices/soc/780000.qcom,msm-core/uio/uio1(/.*)?                                    u:object_r:sysfs_uio_file:s0
+/data/vendor/thermal(/.*)?                       u:object_r:thermal_data_file:s0
 
 # Touchscreen
 /sys/kernel/tp/wake_gesture                                                             u:object_r:sysfs_touchscreen:s0

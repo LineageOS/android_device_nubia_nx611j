@@ -11,11 +11,8 @@ get_prop(system_server, userspace_reboot_exported_prop)
 # Camera
 allow system_server exported_camera_prop:file { getattr open read };
 
-# Light
-allow system_server sysfs_nubia_breathlight:file { open read write };
-
 # Proximity
-allow system_server sysfs_prox_cal:file { open write };
+allow system_server sysfs_proximity_sensor:file { open write };
 
 # Touchscreen
-allow system_server sysfs_sectouch:file { rw_file_perms };
+allow system_server sysfs_touchscreen:file { rw_file_perms };
