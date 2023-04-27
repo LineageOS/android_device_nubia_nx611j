@@ -1,10 +1,5 @@
-# Audio
-type public_adsprpcd_file, file_type;
-
 # Fingerprint
-type sysfs_fingerprint_wakeup, sysfs_type, fs_type;
 type sysfs_fingerprint, sysfs_type, fs_type;
-type sysfs_fingerprint_irq, sysfs_type, fs_type;
 
 # Fingerprint (fpdsensor)
 type fpdsensor_data_file, file_type, core_data_file_type, data_file_type;
@@ -12,15 +7,11 @@ type fpdsensor_data_file, file_type, core_data_file_type, data_file_type;
 # Lcd
 type sysfs_tp_lcd, sysfs_type, fs_type;
 
-# Led
-type sysfs_nubia_breathlight, sysfs_type, fs_type;
-
 # Light
-type sysfs_rgb_cal, sysfs_type, fs_type;
 type sysfs_light_sensor, sysfs_type, fs_type;
 
 # Proximity
-type sysfs_prox_cal, sysfs_type, fs_type;
+type sysfs_proximity_sensor, sysfs_type, fs_type;
 
 # Thermal
 type thermal_data_file, file_type, data_file_type;

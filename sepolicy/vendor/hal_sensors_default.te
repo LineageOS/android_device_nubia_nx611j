@@ -1,12 +1,8 @@
 #============= hal_sensors_default ==============
-allow hal_sensors_default sysfs:file { read write open };
-
-# Camera
-set_prop(hal_sensors_default, camera_prop)
-
 # Light
 allow hal_sensors_default sysfs_light_sensor:dir search;
 allow hal_sensors_default sysfs_light_sensor:file { read write open };
 
 # Proximity
-allow hal_sensors_default sysfs_prox_cal:file { write open };
+allow hal_sensors_default sysfs_proximity_sensor:dir search;
+allow hal_sensors_default sysfs_proximity_sensor:file { read open write };

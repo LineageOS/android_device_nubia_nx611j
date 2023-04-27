@@ -1,6 +1,5 @@
 #============= hal_light_default ==============
-allow hal_light_default sysfs_nubia_breathlight:file { rw_file_perms };
-allow hal_light_default sysfs_batteryinfo:file { r_file_perms };
-allow hal_light_default sysfs_batteryinfo:dir { r_dir_perms };
 allow hal_light_default sysfs_battery_supply:file { r_file_perms };
 allow hal_light_default sysfs_battery_supply:dir { r_dir_perms };
+
+allow hal_light_default sysfs:file { getattr open write };
