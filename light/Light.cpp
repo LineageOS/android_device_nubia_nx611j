@@ -12,12 +12,12 @@
 
 #include <fstream>
 
-#define LCD_LED         "/sys/class/leds/lcd-backlight/brightness"
+#define LCD_LED                "/sys/class/leds/lcd-backlight/brightness"
 
-#define NUBIA_LED_MODE    "/sys/class/leds/nubia_led/blink_mode"
+#define NUBIA_LED_MODE         "/sys/class/leds/nubia_led/blink_mode"
 #define NUBIA_LED_COLOR        "/sys/class/leds/nubia_led/outn"
-#define NUBIA_GRADE    "/sys/class/leds/nubia_led/grade_parameter"
-#define NUBIA_FADE     "/sys/class/leds/nubia_led/fade_parameter"
+#define NUBIA_GRADE            "/sys/class/leds/nubia_led/grade_parameter"
+#define NUBIA_FADE             "/sys/class/leds/nubia_led/fade_parameter"
 
 #define BATTERY_STATUS_FILE       "/sys/class/power_supply/battery/status"
 #define BATTERY_CAPACITY          "/sys/class/power_supply/battery/capacity"
@@ -34,11 +34,11 @@
 #define NUBIA_LED_RED     48
 #define NUBIA_LED_GREEN   64
 
+#define BREATH_SOURCE_NONE		0x00
 #define BREATH_SOURCE_NOTIFICATION	0x01
 #define BREATH_SOURCE_BATTERY		0x02
 #define BREATH_SOURCE_BUTTONS		0x04
 #define BREATH_SOURCE_ATTENTION		0x08
-#define BREATH_SOURCE_NONE			0x00
 
 #define MAX_LED_BRIGHTNESS    255
 #define MAX_LCD_BRIGHTNESS    4095

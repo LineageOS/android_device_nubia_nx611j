@@ -520,7 +520,6 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib/hw/keystore.sdm660.so
 vendor/lib64/hw/keystore.sdm660.so
 
-
 # Sensors -from asus x01BD
 vendor/bin/sensors.qti|f7bc782de932f6b53ac3a2f5023de56e202f19d7
 vendor/etc/sensors/sensor_def_qcomdev.conf|c673951d430942a2e27f880da5afe6c34bbcfb71
