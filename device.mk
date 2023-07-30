@@ -199,8 +199,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.nubia_nx611j \
-    android.hardware.biometrics.fingerprint@2.1.vendor
+    android.hardware.biometrics.fingerprint@2.3-service.nubia
 
 # fwk-detect
 PRODUCT_PACKAGES += \
