@@ -85,7 +85,7 @@ function blob_fixup() {
         vendor/lib64/libnubia_media_player.so)
             "${PATCHELF}" --remove-needed "libandroid_runtime.so" "${2}"
          ;;
-        vendor/lib64/hw/fingerprint.sdm660.so)
+        vendor/lib64/hw/fingerprint.sunwave.sdm660.so)
             "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
             "${PATCHELF}" --remove-needed "libbacktrace.so" "${2}"
          ;;

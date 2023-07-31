@@ -384,7 +384,7 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.sunwave.so:vendor/lib64/hw/fingerprint.sdm660.so|c46072a15e28143c30954d62a92a6d394cf6abcd
+vendor/lib64/hw/fingerprint.sunwave.so:vendor/lib64/hw/fingerprint.sunwave.sdm660.so|c46072a15e28143c30954d62a92a6d394cf6abcd
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
