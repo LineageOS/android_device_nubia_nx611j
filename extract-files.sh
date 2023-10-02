@@ -80,12 +80,10 @@ function blob_fixup() {
         ;;
         vendor/lib/libmmcamera_ppeiscore.so|vendor/lib/libmmcamera_bokeh.so|vendor/lib/libnubia_effect.so|vendor/lib64/libnubia_effect.so|vendor/lib64/libnubia_media_player.so)
             "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
+            "${PATCHELF}" --remove-needed "libgui.so" "${2}"
          ;;
         vendor/lib64/libnubia_media_player.so)
             "${PATCHELF}" --remove-needed "libandroid_runtime.so" "${2}"
-         ;;
-        vendor/lib/libmmcamera_ppeiscore.so|vendor/lib/libmmcamera_bokeh.so|vendor/lib/libnubia_effect.so|vendor/lib64/libnubia_effect.so|vendor/lib64/libnubia_media_player.so)
-            "${PATCHELF}" --remove-needed "libgui.so" "${2}"
          ;;
         vendor/lib64/hw/fingerprint.sdm660.so)
             "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
