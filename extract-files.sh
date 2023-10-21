@@ -89,6 +89,9 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
             "${PATCHELF}" --remove-needed "libbacktrace.so" "${2}"
          ;;
+        vendor/lib64/libarcsoft_beautyshot_image_algorithm.so | vendor/lib64/libarcsoft_night_shot.so | vendor/lib64/libarcsoft_beautyshot_video_algorithm.so | vendor/lib64/libarcsoft_beautyshot.so | vendor/lib64/libtrueportrait.so | vendor/lib/libarcsoft_beautyshot_image_algorithm.so | vendor/lib/libmmcamera_hdr_gb_lib.so | vendor/lib/libcalibverify.so | vendor/lib/libarcsoft_high_dynamic_range.so | vendor/lib/libarcsoft_night_shot.so | vendor/lib/libvideobokeh.so | vendor/lib/liboptizoom.so | vendor/lib/libdualcameraddm.so | vendor/lib/libarcsoft_dualcam_verification.so | vendor/lib/libarcsoft_beautyshot_video_algorithm.so | vendor/lib/libarcsoft_beautyshot.so | vendor/lib/libchromaflash.so | vendor/lib/libtrueportrait.so | vendor/lib/libarcsoft_dualcam_refocus.so | vendor/lib/libseemore.so)
+            "${PATCHELF_0_17_2}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+         ;;
         vendor/bin/pm-service)
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
          ;;
