@@ -89,6 +89,9 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
             "${PATCHELF}" --remove-needed "libbacktrace.so" "${2}"
          ;;
+        vendor/bin/pm-service)
+            grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
+         ;;
     esac
 }
 
